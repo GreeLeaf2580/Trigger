@@ -11,4 +11,3 @@ execute if score dialogue active matches 1..10 run scoreboard players add dialog
 execute if score dialogue active matches 6..10 as @a at @e[name=playerPosition] facing entity @e[name=facingPosition] feet run tp @s ~~~~~
 
 # --- 需要启用的剧情线文件 ---
-function lib/function_lists/dialogue

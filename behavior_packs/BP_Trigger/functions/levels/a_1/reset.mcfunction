@@ -1,7 +1,13 @@
 
-tellraw @a {"rawtext": [{"text":"[A1]已重置关卡"}]}
+tellraw @a[scores={class=1,grade=1}] {"rawtext": [{"text":"[A1]已重置关卡"}]}
 
-give @a wheat_seeds 1 0
+execute as @a[scores={class=1,grade=1}] at @s run replaceitem entity @a slot.hotbar 7 trigger:reset 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
+
+execute as @a[scores={class=1,grade=1}] at @s run replaceitem entity @a slot.hotbar 8 trigger:quit 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
+
+give @a[scores={class=1,grade=1}] wheat_seeds 1 0
+
+execute positioned 0 20 23 run kill @e[type=chicken,r=5]
 
 summon minecraft:chicken 0 19 26
 
