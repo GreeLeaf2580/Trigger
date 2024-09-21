@@ -1,2 +1,7 @@
 diagnostic.disable.minecraft.mode.gamemodes.invalid=true
 diagnostic.disable.behaviorpack.block.states.invalid=true
+diagnostic.disable.behaviorpack.block.missing=true
+diagnostic.disable.behaviorpack.block.missing=true
+diagnostic.disable.behaviorpack.block.missing=true
+diagnostic.disable.behaviorpack.item.components.deprecated=true
+diagnostic.disable.behaviorpack.item.component.missing=true
