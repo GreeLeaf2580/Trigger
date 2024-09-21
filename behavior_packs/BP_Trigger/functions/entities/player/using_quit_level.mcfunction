@@ -1,0 +1,1 @@
+execute if score @s class matches 1 if score @s grade matches 1 run function levels/a_1/quit

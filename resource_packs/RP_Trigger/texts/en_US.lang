@@ -1,0 +1,44 @@
+## Translations
+
+item.template:change_to_creative=Change To Creative Mode
+item.template:change_to_survival=Change To Survival Mode
+item.template:change_to_adventure=Change To Adventure Mode
+item.template:change_to_spectator=Change To Spectator Mode
+
+functions.general.need_developer_mode=§cThis function is only available in developer mode
+functions.developer.query.variables.succeed.line1=Format: <Objective>.<Name>=<Value>.
+functions.developer.query.variables.succeed.line2=§eYellow: Used <Marker> entity to store data
+functions.developer.query.variables.succeed.line3=§bAqua: Player data
+functions.developer.query.variables.succeed.player_data=§l===== Player Data =====
+functions.developer.query.variables.succeed.isOnline.@s=§bisOnline.@s = §a%s §7| Whether the player is online | 0: Just entered the game, 1: Is online
+functions.developer.query.variables.succeed.state.@s=§bstate.@s = §a%s §7| Current state of player | 0: Standing, 1: Sneaking, 2: Swimming, 3: Sleeping
+functions.developer.query.variables.succeed.active=§l===== active =====
+functions.developer.query.variables.succeed.active.dialogue=active.dialogue = §a%s §7| Whether the dialogue is enabled | 0: disabled, 1-5: enabled and time passed, 6-10: enabled, time passed and locked the camera, 9-: enabled
+functions.developer.query.variables.succeed.active.soundPlayer=active.soundPlayer = §a%s §7| Type of sound player, playing different sound effects according to different values | 0: disabled, 1-: enabled
+functions.developer.query.variables.succeed.active.timeline=active.timeline = §a%s §7| Whether the timeline is enabled | 0: disabled, 1-5: enabled and time passed, 5-: enabled
+functions.developer.query.variables.succeed.data=§l===== data =====
+functions.developer.query.variables.succeed.data.isNetease=data.isNetease = §a%s §7| Whether the client is Netease version | 0: International version, 1: China Version
+functions.developer.query.variables.succeed.data.playerAmount=data.playerAmount = §a%s §7| Total number of players
+functions.developer.query.variables.succeed.settings=§l===== settings =====
+functions.developer.query.variables.succeed.settings.developerMode=settings.developerMode = §a%s §7| Whether developer mode is enabled | 0: disabled, 1: enabled
+functions.developer.query.variables.succeed.time=§l===== time =====
+functions.developer.query.variables.succeed.time.tick=time.tick = §a%s §7| Add one point every tick, and cycle once every second | Unit: tick
+functions.developer.query.variables.succeed.time.dialogue=time.dialogue = §a%s §7| Dialogue time, trigger a conversation after reaching a certain value | Unit: tick
+functions.developer.query.variables.succeed.time.soundPlayer=time.soundPlayer = §a%s §7| Sound player, which triggers a specific sound when it's 0 | Unit: tick
+functions.developer.query.variables.succeed.time.timeline=time.timeline = §a%s §7| Timeline time, trigger commands or functions after reaching a certain value | Unit: tick
+functions.developer.query.variables.succeed.tags=§l===== Tags =====
+functions.developer.query.variables.succeed.tags.isAlive_get=isAlive = §atrue §7| Whether the player is alive
+functions.developer.query.variables.succeed.tags.isAlive_not_get=isAlive = §efalse §7| Whether the player is alive
+functions.lib.modify_data.developer_gamemode.change_to_creative.succeed=Your game mode has been changed to creative
+functions.lib.modify_data.developer_gamemode.change_to_creative.fail.already_in_mode=§cYou're already in creative mode, and you can't change it any more
+functions.lib.modify_data.developer_gamemode.change_to_survival.succeed=Your game mode has been changed to survival
+functions.lib.modify_data.developer_gamemode.change_to_survival.fail.already_in_mode=§cYou're already in survival mode, and you can't change it any more
+functions.lib.modify_data.developer_gamemode.change_to_adventure.succeed=Your game mode has been changed to adventure
+functions.lib.modify_data.developer_gamemode.change_to_adventure.fail.already_in_mode=§cYou're already in adventure mode, and you can't change it any more
+functions.lib.modify_data.developer_gamemode.change_to_spectator.succeed=Your game mode has been changed to spectator, look up to change to creative mode
+functions.lib.modify_data.developer_gamemode.change_to_spectator.fail.already_in_mode=§cYou're already in spectator mode, and you can't change it any more
+functions.settings.developer_mode.disabled=Developer mode is disabled
+functions.settings.developer_mode.enabled=Developer mode is enabled
+
+item.trigger:quit.name=§bQuit Level
+item.trigger:reset.name=§aReset Level

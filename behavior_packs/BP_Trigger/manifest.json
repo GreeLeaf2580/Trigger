@@ -1,0 +1,20 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "触发Trigger行为包",
+        "description": "触发Trigger地图配套行为包。技术支持@一只卑微的量筒",
+        "uuid": "406d7ad9-a5cf-46a9-9e46-dc7f7ac7ef0d",
+        "version": [ 1, 0, 0 ],
+        "min_engine_version": [ 1, 20, 10 ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "version": [ 1, 0, 0 ],
+            "uuid": "d53caf86-ae45-4568-93db-f95ac368997b"
+        }
+    ],
+    "metadata": {
+        "authors": [ "GreeLeaf","YZBWDLT" ]
+    }
+}

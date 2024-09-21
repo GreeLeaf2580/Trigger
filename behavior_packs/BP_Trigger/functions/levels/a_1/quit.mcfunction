@@ -1,0 +1,1 @@
+tellraw @a {"rawtext": [{"text":"[A1]已退出"}]}

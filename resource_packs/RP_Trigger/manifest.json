@@ -1,0 +1,20 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "触发Trigger资源包",
+        "description": "触发Trigger地图配套资源包。贴图绘制@野鲤，技术支持@一只卑微的量筒",
+        "uuid": "864ab312-e51e-4b56-a75d-1d8778628888",
+        "version": [ 1, 0, 0 ],
+        "min_engine_version": [ 1, 20, 10 ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "version": [ 1, 0, 0 ],
+            "uuid": "be12dddb-de68-4d38-8a7f-a96145154e96"
+        }
+    ],
+    "metadata": {
+        "authors": [ "GreeLeaf","YZBWDLT" ]
+    }
+}

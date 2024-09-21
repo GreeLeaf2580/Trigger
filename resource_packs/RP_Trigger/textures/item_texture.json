@@ -1,0 +1,12 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "change_to_creative": { "textures":"textures/items/apple_golden" },
+        "change_to_survival": { "textures":"textures/items/iron_sword" },
+        "change_to_adventure": { "textures": "textures/items/map_empty" },
+        "change_to_spectator": { "textures": "textures/items/ender_eye" },
+        "quit": { "textures" : "textures/items/quit"},
+        "reset": { "textures" : "textures/items/reset"}
+    }
+}

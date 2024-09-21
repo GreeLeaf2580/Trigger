@@ -1,0 +1,44 @@
+## 翻译
+
+item.template:change_to_creative=改为创造模式
+item.template:change_to_survival=改为生存模式
+item.template:change_to_adventure=改为冒险模式
+item.template:change_to_spectator=改为旁观模式
+
+functions.general.need_developer_mode=§c该功能仅限在开发者模式下使用
+functions.developer.query.variables.succeed.line1=格式：<记分项>.<名称>=<值>
+functions.developer.query.variables.succeed.line2=§e黄色：使用标记实体存储的数据
+functions.developer.query.variables.succeed.line3=§b青色：玩家数据
+functions.developer.query.variables.succeed.player_data=§l===== 玩家数据 =====
+functions.developer.query.variables.succeed.isOnline.@s=§bisOnline.@s = §a%s §7| 玩家是否在线 | 0：刚进入游戏，1：在线
+functions.developer.query.variables.succeed.state.@s=§bstate.@s = §a%s §7| 玩家当前状态 | 0：站立，1：潜行，2：爬行，3：睡觉
+functions.developer.query.variables.succeed.active=§l===== active记分板 =====
+functions.developer.query.variables.succeed.active.dialogue=active.dialogue = §a%s §7| 剧情线是否启用 | 0：禁用，1-5：启用且时间流逝，6-10：启用、时间流逝且锁定视角，9-：启用
+functions.developer.query.variables.succeed.active.soundPlayer=active.soundPlayer = §a%s §7| 音效播放器类型，按不同值播放不同的音效 | 0：禁用，1-：启用
+functions.developer.query.variables.succeed.active.timeline=active.timeline = §a%s §7| 时间线是否启用 | 0：禁用，1-5：启用且时间流逝，5-：启用
+functions.developer.query.variables.succeed.data=§l===== data记分板 =====
+functions.developer.query.variables.succeed.data.isNetease=data.isNetease = §a%s §7| 当前是否为中国版 | 0：国际版，1：中国版
+functions.developer.query.variables.succeed.data.playerAmount=data.playerAmount = §a%s §7| 总玩家人数
+functions.developer.query.variables.succeed.settings=§l===== settings记分板 =====
+functions.developer.query.variables.succeed.settings.developerMode=settings.developerMode = §a%s §7| 开发者模式是否启用 | 0：禁用，1：启用
+functions.developer.query.variables.succeed.time=§l===== time记分板 =====
+functions.developer.query.variables.succeed.time.tick=time.tick = §a%s §7| 每刻增加1分，每秒重置1次 | 单位：游戏刻
+functions.developer.query.variables.succeed.time.dialogue=time.dialogue = §a%s §7| 剧情线，到达特定值后触发对话 | 单位：游戏刻
+functions.developer.query.variables.succeed.time.soundPlayer=time.soundPlayer = §a%s §7| 音效播放器，为0时触发特定音效 | 单位：游戏刻
+functions.developer.query.variables.succeed.time.timeline=time.timeline = §a%s §7| 时间线，到达特定值后触发命令或函数 | 单位：游戏刻
+functions.developer.query.variables.succeed.tags=§l===== 标签型变量 =====
+functions.developer.query.variables.succeed.tags.isAlive_get=isAlive = §atrue §7| 玩家是否存活
+functions.developer.query.variables.succeed.tags.isAlive_not_get=isAlive = §efalse §7| 玩家是否存活
+functions.lib.modify_data.developer_gamemode.change_to_creative.succeed=你已被调整为创造模式
+functions.lib.modify_data.developer_gamemode.change_to_creative.fail.already_in_mode=§c你已为创造模式，无法做出更改
+functions.lib.modify_data.developer_gamemode.change_to_survival.succeed=你已被调整为生存模式
+functions.lib.modify_data.developer_gamemode.change_to_survival.fail.already_in_mode=§c你已为生存模式，无法做出更改
+functions.lib.modify_data.developer_gamemode.change_to_adventure.succeed=你已被调整为冒险模式
+functions.lib.modify_data.developer_gamemode.change_to_adventure.fail.already_in_mode=§c你已为冒险模式，无法做出更改
+functions.lib.modify_data.developer_gamemode.change_to_spectator.succeed=你已被调整为旁观模式，抬头调整回创造模式
+functions.lib.modify_data.developer_gamemode.change_to_spectator.fail.already_in_mode=§c你已为旁观模式，无法做出更改
+functions.settings.developer_mode.disabled=开发者模式已禁用
+functions.settings.developer_mode.enabled=开发者模式已启用
+
+item.trigger:quit.name=§b退出关卡
+item.trigger:reset.name=§a重置关卡

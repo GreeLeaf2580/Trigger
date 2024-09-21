@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.player.item_using_test": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "is_using_reset": "query.is_item_name_any('slot.weapon.mainhand', 0, 'trigger:reset') && query.is_using_item" },
+                        { "is_using_quit": "query.is_item_name_any('slot.weapon.mainhand', 0, 'trigger:quit') && query.is_using_item" }
+                    ]
+                },
+                "is_using_reset": {
+                    "on_entry": [ "/function entities/player/using_reset_level" ],
+                    "transitions": [
+                        { "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'trigger:reset') || !query.is_using_item" }
+                    ]
+                },
+                "is_using_quit": {
+                    "on_entry": [ "/function entities/player/using_quit_level" ],
+                    "transitions": [
+                        { "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, 'trigger:quit') || !query.is_using_item" }
+                    ]
+                }
+            }
+        }
+    }
+}
