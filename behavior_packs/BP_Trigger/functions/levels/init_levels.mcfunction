@@ -1,0 +1,15 @@
+clone 38 15 27 34 18 28 -21 22 6 replace force
+
+clone 40 17 26 40 17 25 -17 22 6 replace force
+
+clone 34 15 29 38 18 28 -21 22 -7 replace force
+
+#重置选关X
+clone 33 15 26 32 18 26 -26 22 0 replace force
+
+#重置隐藏关和奖励关
+clone 34 15 31 38 18 32 17 22 6
+
+
+#重置a1的讲台
+clone 5 7 20   5 7 20   -2 26 28

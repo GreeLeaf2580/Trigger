@@ -11,3 +11,4 @@ execute if score timeline active matches 1..5 run scoreboard players add timelin
 
 execute if entity @a[scores={class=0,grade=0}] run function levels/hall/timeline
 execute if entity @a[scores={class=1,grade=1}] run function levels/a_1/timeline
+execute if entity @a[scores={class=1,grade=2}] run function levels/a_2/timeline

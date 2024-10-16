@@ -42,3 +42,5 @@ functions.settings.developer_mode.enabled=Developer mode is enabled
 
 item.trigger:quit.name=§bQuit Level
 item.trigger:reset.name=§aReset Level
+
+tile.frame.name=Item Frame

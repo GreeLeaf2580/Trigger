@@ -42,3 +42,5 @@ functions.settings.developer_mode.enabled=开发者模式已启用
 
 item.trigger:quit.name=§b退出关卡
 item.trigger:reset.name=§a重置关卡
+
+tile.frame.name=物品展示框

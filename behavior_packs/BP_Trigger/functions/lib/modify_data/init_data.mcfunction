@@ -21,7 +21,6 @@ scoreboard objectives add state dummy "玩家状态"
 
 scoreboard objectives add class dummy "关卡类型"
 scoreboard objectives add grade dummy "关卡等级"
-
 # --- 数据变量重置 ---
 
 ## 基础时间数据
@@ -31,7 +30,7 @@ scoreboard players set tick time 0
 scoreboard players set developerMode settings 0
 
 ## 时间线、剧情线与音效播放器
-scoreboard players set timeline active 0
+scoreboard players set timeline active 1
 scoreboard players set timeline time 0
 scoreboard players set dialogue active 0
 scoreboard players set dialogue time 0
@@ -41,6 +40,7 @@ scoreboard players set soundPlayer time 0
 ## 杂项数据
 scoreboard players set playerAmount data 1
 scoreboard players set isNetease data 0
+scoreboard players set entityAmount data 0
 
 ## 玩家数据
 scoreboard players set @a isOnline 1
