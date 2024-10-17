@@ -8,6 +8,9 @@
 execute if score timeline active matches 1..5 run scoreboard players add timeline time 1
 
 # --- 时间线函数文件列表 ---
+execute as @a at @s if entity @a[r=1,rm=0.01] run effect @s invisibility 1 0 true
+execute as @a at @s if entity @a[r=1,rm=0.9] run effect @s invisibility 0 2 true
+
 
 execute if entity @a[scores={class=0,grade=0}] run function levels/hall/timeline
 execute if entity @a[scores={class=1,grade=1}] run function levels/a_1/timeline
