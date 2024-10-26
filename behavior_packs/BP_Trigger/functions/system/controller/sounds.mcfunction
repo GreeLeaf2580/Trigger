@@ -42,6 +42,11 @@ execute if score soundPlayer time matches 0 if score soundPlayer active matches 
 
 ## 15 | playsound random.enderchestclosed | 音调1
 execute if score soundPlayer time matches 0 if score soundPlayer active matches 15 as @a[scores={class=0,grade=0}] at @s run playsound random.enderchestclosed @s ~ ~ ~ 1 1
+
+## 16 | random.levelup | 音调0.5
+execute if score soundPlayer time matches 0 if score soundPlayer active matches 16 as @a at @s run playsound random.levelup @s ~~~ 1 0.5
+execute if score soundPlayer time matches 0 if score soundPlayer active matches 16 as @a at @s run summon fireworks_rocket ~~~
+
 # --- 重置音效播放器 ---
 # 当音效倒计时为0后执行
 execute if score soundPlayer time matches 0 run function lib/modify_states/sound_player/reset

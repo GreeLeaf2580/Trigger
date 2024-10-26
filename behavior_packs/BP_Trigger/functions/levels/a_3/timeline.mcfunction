@@ -1,19 +1,30 @@
 #检测关卡的通关条件
-execute if block -25 17 23 light_weighted_pressure_plate ["redstone_signal"=6] run function levels/a_2/complete
+execute if block -58 19 24 minecraft:heavy_weighted_pressure_plate ["redstone_signal"=1] run function levels/a_3/complete
 
 
 #检测后继条件
     scoreboard players set entityAmount data 0
 
-    execute as @e[type=chicken] run scoreboard players add entityAmount data 1
+    execute positioned -53 19 24 as @e[type=!player,r=8] run scoreboard players add entityAmount data 1
 
-    execute if block -25 17 23 light_weighted_pressure_plate ["redstone_signal"=3] if score entityAmount data matches 0 run summon minecraft:chicken -23 19 25 0 0 minecraft:ageable_grow_up
+    #生成猪
+    execute if block -53 17 24 light_weighted_pressure_plate ["redstone_signal"=3] if score entityAmount data matches 3 run summon minecraft:pig -49 19 19  0 0 minecraft:ageable_grow_up
 
-    execute if block -25 17 23 light_weighted_pressure_plate ["redstone_signal"=3] if score entityAmount data matches 0 run summon minecraft:chicken -23 19 21 0 0 minecraft:ageable_grow_up
+    execute if block -53 17 24 light_weighted_pressure_plate ["redstone_signal"=3] if score entityAmount data matches 3 run summon minecraft:pig -48 19 28  0 0 minecraft:ageable_grow_up
 
-#检测解锁idea1的通关条件
-#如果-29 22 17的胡萝卜被破坏（即跳跃破坏耕地）且21 22 7为灰色混凝土粉末（即未解锁idea1）且相应计分项为0（防止timeline重复执行），则运行通知函数（修改Idea1ItemGot为1）
-execute unless block -29 22 17 minecraft:carrots if block 21 22 7 concrete_powder ["color"="gray"] if score Idea1ItemGot data matches 0 run function levels/idea_1/notice
+    #生成兔子
+    execute if block -53 17 24 light_weighted_pressure_plate ["redstone_signal"=6] if score entityAmount data matches 6 run summon minecraft:rabbit -48 19 20  0 0 in_snow ProjectXero
+
+    execute if block -53 17 24 light_weighted_pressure_plate ["redstone_signal"=6] if score entityAmount data matches 6 run summon minecraft:rabbit -49 19 29  0 0
+
+    execute if block -53 17 24 light_weighted_pressure_plate ["redstone_signal"=6] if score entityAmount data matches 6 run event entity @e[type=rabbit] grow_up
+
+    #生成小猪
+    execute if block -53 17 24 light_weighted_pressure_plate ["redstone_signal"=9] if score entityAmount data matches 9 run summon minecraft:pig -49 19 19  0 0 minecraft:entity_born
+
+    execute if block -53 17 24 light_weighted_pressure_plate ["redstone_signal"=9] if score entityAmount data matches 9 run give @a[scores={class=1,grade=3}] saddle
+
+    execute if block -53 17 24 light_weighted_pressure_plate ["redstone_signal"=9] if score entityAmount data matches 9 run give @a[scores={class=1,grade=3}] carrot_on_a_stick
 
 #清除该关卡的掉落物
-execute positioned -25 19 23 run kill @e[type=item,r=7]
+execute positioned -53 19 24 run kill @e[type=item,r=8]

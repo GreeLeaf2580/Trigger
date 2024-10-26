@@ -15,6 +15,7 @@ execute positioned -17 23 6 as @p[scores={class=1,grade=2}] at @s run clear @s
     #播放选定的音效
     scoreboard players set soundPlayer active 14
 
+
 #将被该关卡选中的玩家传送至选关
 tp @a[scores={class=1,grade=2}] -25 21 23 facing -19 21 29 true
 

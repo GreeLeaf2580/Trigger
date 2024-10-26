@@ -19,7 +19,7 @@ execute positioned -17 24 6 as @p[scores={class=1,grade=3}] at @s run clear @s
 tp @a[scores={class=1,grade=3}] -53 21 24 facing -64 21 33 true
 
 #将被该关卡选中的玩家显示标题
-title @a[scores={class=1,grade=3}] title 我们终将长大
+title @a[scores={class=1,grade=3}] title 成长
 
 #将被该关卡选中的玩家显示副标题
 title @a[scores={class=1,grade=3}] subtitle -A3-

@@ -1,9 +1,6 @@
 #被该关卡选中的玩家显示提示信息
 tellraw @a[scores={class=1,grade=1}] {"rawtext": [{"text":"[A1]已重置关卡"}]}
 
-#播放末影人音效
-execute at @a[scores={class=1,grade=1}] as @s run playsound mob.endermen.portal @s ~ ~ ~ 10 1 10
-
 #清除被该关卡选中的玩家背包
 clear @a[scores={class=1,grade=1}]
 

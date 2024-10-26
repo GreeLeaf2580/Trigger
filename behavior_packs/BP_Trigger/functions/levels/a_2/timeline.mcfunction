@@ -3,10 +3,13 @@ execute if block -25 17 23 light_weighted_pressure_plate ["redstone_signal"=6] r
 
 
 #检测后继条件
+
+    #检查生物数量
     scoreboard players set entityAmount data 0
 
-    execute as @e[type=chicken] run scoreboard players add entityAmount data 1
+    execute positioned -25 20 23 as @e[type=chicken,r=5] run scoreboard players add entityAmount data 1
 
+    #如果生物数量是3且没有鸡生成则生成鸡
     execute if block -25 17 23 light_weighted_pressure_plate ["redstone_signal"=3] if score entityAmount data matches 0 run summon minecraft:chicken -23 19 25 0 0 minecraft:ageable_grow_up
 
     execute if block -25 17 23 light_weighted_pressure_plate ["redstone_signal"=3] if score entityAmount data matches 0 run summon minecraft:chicken -23 19 21 0 0 minecraft:ageable_grow_up

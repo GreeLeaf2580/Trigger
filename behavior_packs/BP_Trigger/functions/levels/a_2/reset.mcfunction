@@ -1,6 +1,9 @@
 #被该关卡选中的玩家显示提示信息
 tellraw @a[scores={class=1,grade=2}] {"rawtext": [{"text":"[A2]已重置关卡"}]}
 
+#清除被该关卡选中的玩家背包
+clear @a[scores={class=1,grade=2}]
+
 #给予被选中玩家物品
     #给予“重置关卡”
     execute as @a[scores={class=1,grade=2}] at @s run replaceitem entity @a slot.hotbar 7 trigger:reset 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
@@ -8,13 +11,13 @@ tellraw @a[scores={class=1,grade=2}] {"rawtext": [{"text":"[A2]已重置关卡"}
     #给予“退出关卡”
     execute as @a[scores={class=1,grade=2}] at @s run replaceitem entity @a slot.hotbar 8 trigger:quit 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
 
-    #给予一个小麦种子
+    #给予小麦种子
     give @a[scores={class=1,grade=2}] wheat_seeds 64 0
 
-    #给予一个胡萝卜
+    #给予胡萝卜
     give @a[scores={class=1,grade=2}] carrot 64 0
 
-#清除在a1里的小鸡
+#清除在a2里的小鸡和兔子
 execute positioned -25 19 23 run kill @e[type=chicken,r=6]
 execute positioned -25 19 23 run kill @e[type=rabbit,r=6]
 
