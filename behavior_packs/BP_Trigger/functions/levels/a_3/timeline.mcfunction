@@ -1,3 +1,6 @@
+#检测关卡内的装置
+
+
 #检测关卡的通关条件
 execute if block -58 19 24 minecraft:heavy_weighted_pressure_plate ["redstone_signal"=1] run function levels/a_3/complete
 

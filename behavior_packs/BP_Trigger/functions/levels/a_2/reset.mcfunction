@@ -6,10 +6,10 @@ clear @a[scores={class=1,grade=2}]
 
 #给予被选中玩家物品
     #给予“重置关卡”
-    execute as @a[scores={class=1,grade=2}] at @s run replaceitem entity @a slot.hotbar 7 trigger:reset 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
+    execute as @a[scores={class=1,grade=2}] at @s run replaceitem entity @s slot.hotbar 7 trigger:reset 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
 
     #给予“退出关卡”
-    execute as @a[scores={class=1,grade=2}] at @s run replaceitem entity @a slot.hotbar 8 trigger:quit 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
+    execute as @a[scores={class=1,grade=2}] at @s run replaceitem entity @s slot.hotbar 8 trigger:quit 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
 
     #给予小麦种子
     give @a[scores={class=1,grade=2}] wheat_seeds 64 0
