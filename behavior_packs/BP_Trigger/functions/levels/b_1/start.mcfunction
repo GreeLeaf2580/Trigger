@@ -1,5 +1,5 @@
 #修改在大厅的且距离-19 22 6的按钮最近玩家的计分项
-    #修改类型为A类
+    #修改类型为B类
     execute positioned -19 22 6 as @p[scores={class=0}] at @s run scoreboard players set @s class 2
 
     #修改难度为1

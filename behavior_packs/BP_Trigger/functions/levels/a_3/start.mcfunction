@@ -2,7 +2,7 @@
     #修改类型为A类
     execute positioned -17 24 6 as @p[scores={class=0}] at @s run scoreboard players set @s class 1
 
-    #修改难度为1
+    #修改难度为3
     execute positioned -17 24 6 as @p[scores={grade=0}] at @s run scoreboard players set @s grade 3
 
 #清除进入时的玩家物品
