@@ -5,3 +5,6 @@ diagnostic.disable.behaviorpack.block.missing=true
 diagnostic.disable.behaviorpack.block.missing=true
 diagnostic.disable.behaviorpack.item.components.deprecated=true
 diagnostic.disable.behaviorpack.item.component.missing=true
+diagnostic.disable.behaviorpack.mcstructure.missing=true
+diagnostic.disable.behaviorpack.mcstructure.missing=true
+diagnostic.disable.behaviorpack.mcstructure.missing=true

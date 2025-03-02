@@ -4,6 +4,12 @@
 #检测关卡的通关条件
 execute if block -58 19 24 minecraft:heavy_weighted_pressure_plate ["redstone_signal"=1] run function levels/a_3/complete
 
+#检测是否按下按钮
+    #放置草方块
+    execute if block -58 16 34 redstone_torch run clone -59 8 32 -59 9 32 -53 18 24
+    #放置告示牌
+    execute unless block -58 16 34 redstone_torch run clone -61 8 32 -61 9 32 -53 18 24
+
 
 #检测后继条件
     scoreboard players set entityAmount data 0

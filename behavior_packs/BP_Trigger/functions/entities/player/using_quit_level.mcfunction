@@ -14,3 +14,6 @@ execute if score @s class matches 1 if score @s grade matches 3 run function lev
 
 execute if score @s class matches 2 if score @s grade matches 1 run function levels/b_1/quit
 execute if score @s class matches 2 if score @s grade matches 2 run function levels/b_2/quit
+execute if score @s class matches 2 if score @s grade matches 3 run function levels/b_3/quit
+
+execute if score @s class matches 3 if score @s grade matches 1 run function levels/c_1/quit
