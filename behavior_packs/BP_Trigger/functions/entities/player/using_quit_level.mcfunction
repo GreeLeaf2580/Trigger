@@ -1,6 +1,6 @@
 #播放关闭末影箱的音效
     #播放延迟时间
-    scoreboard players set soundPlayer time 3
+    scoreboard players set soundPlayer time 5
 
     #播放选定的音效
     scoreboard players set soundPlayer active 15
@@ -17,3 +17,5 @@ execute if score @s class matches 2 if score @s grade matches 2 run function lev
 execute if score @s class matches 2 if score @s grade matches 3 run function levels/b_3/quit
 
 execute if score @s class matches 3 if score @s grade matches 1 run function levels/c_1/quit
+execute if score @s class matches 3 if score @s grade matches 2 run function levels/c_2/quit
+execute if score @s class matches 3 if score @s grade matches 3 run function levels/c_3/quit

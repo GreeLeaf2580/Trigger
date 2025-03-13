@@ -8,3 +8,4 @@ diagnostic.disable.behaviorpack.item.component.missing=true
 diagnostic.disable.behaviorpack.mcstructure.missing=true
 diagnostic.disable.behaviorpack.mcstructure.missing=true
 diagnostic.disable.behaviorpack.mcstructure.missing=true
+diagnostic.disable.behaviorpack.block.states.missing=true

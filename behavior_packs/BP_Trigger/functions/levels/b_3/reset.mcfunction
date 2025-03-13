@@ -19,8 +19,8 @@ clear @a[scores={class=2,grade=3}]
 structure load B3 -65 19 45 0_degrees none false true false
 
 #如果17 24 7为灰色混凝土粉末，即idea_3未解锁，重置解锁idea_3的区域
-    #重置胡萝卜田
+    #重置熔炉
     execute if block 17 24 7 concrete_powder ["color"="gray"] run clone -62 13 65   -62 13 65   -53 20 61
 
-    #重置开启idea1的计分项
+    #重置开启idea3的计分项
     scoreboard players set Idea3ItemGot data 0

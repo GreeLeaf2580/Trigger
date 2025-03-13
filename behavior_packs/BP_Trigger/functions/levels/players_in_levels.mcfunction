@@ -54,3 +54,17 @@
 
     #如果是表示通过的绿色混凝土粉末，则替换为木头按钮和绿色混凝土粉末
     execute if blocks 40 19 25  40 19 25   -21 22 6 all unless entity @a[scores={class=3,grade=1}] if block -21 22 7 concrete_powder ["color"="green"] run clone 40 16 26   40 16 25   -21 22 6 replace force
+
+#如果c2里被占用（-21 23 6为40 19 25的禁止进入），且c2里没有人，则解除占用
+    #如果是表示未通过的黄色混凝土粉末，则替换为石头按钮和黄色混凝土粉末
+    execute if blocks 40 19 25  40 19 25   -21 23 6 all unless entity @a[scores={class=3,grade=2}] if block -21 23 7 concrete_powder ["color"="yellow"] run clone 40 17 26   40 17 25   -21 23 6 replace force
+
+    #如果是表示通过的绿色混凝土粉末，则替换为木头按钮和绿色混凝土粉末
+    execute if blocks 40 19 25  40 19 25   -21 23 6 all unless entity @a[scores={class=3,grade=2}] if block -21 23 7 concrete_powder ["color"="green"] run clone 40 16 26   40 16 25   -21 23 6 replace force
+
+#如果c3里被占用（-21 24 6为40 19 25的禁止进入），且c3里没有人，则解除占用
+    #如果是表示未通过的黄色混凝土粉末，则替换为石头按钮和黄色混凝土粉末
+    execute if blocks 40 19 25  40 19 25   -21 24 6 all unless entity @a[scores={class=3,grade=3}] if block -21 24 7 concrete_powder ["color"="yellow"] run clone 40 17 26   40 17 25   -21 24 6 replace force
+
+    #如果是表示通过的绿色混凝土粉末，则替换为木头按钮和绿色混凝土粉末
+    execute if blocks 40 19 25  40 19 25   -21 24 6 all unless entity @a[scores={class=3,grade=3}] if block -21 24 7 concrete_powder ["color"="green"] run clone 40 16 26   40 16 25   -21 24 6 replace force
