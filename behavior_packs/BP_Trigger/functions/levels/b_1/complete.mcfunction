@@ -3,7 +3,7 @@ tellraw @a {"rawtext": [{"text":"[B1]已通过！"}]}
 
 #播放通关的音效
     #播放延迟时间
-    scoreboard players set soundPlayer time 3
+    scoreboard players set soundPlayer time 5
 
     #播放选定的音效
     scoreboard players set soundPlayer active 1

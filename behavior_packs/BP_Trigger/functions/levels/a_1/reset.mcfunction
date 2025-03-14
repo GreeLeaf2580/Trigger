@@ -14,11 +14,11 @@ clear @a[scores={class=1,grade=1}]
     #给予一个小麦种子
     give @a[scores={class=1,grade=1}] wheat_seeds 1 0
 
-#清除在a1里的小鸡
-execute positioned 0 20 23 run kill @e[type=chicken,r=5]
+    #清除在a1里的小鸡
+    execute positioned 0 20 23 run kill @e[type=chicken,r=5]
 
-#在0 19 26起点生成小鸡
-summon minecraft:chicken 0 19 26
+    #在0 19 26起点生成小鸡
+    summon minecraft:chicken 0 19 26
 
 #如果20 22 7为石英柱，即hide_1未解锁过，重置解锁hide_1的区域
     #重置箱子及其内容物“念”

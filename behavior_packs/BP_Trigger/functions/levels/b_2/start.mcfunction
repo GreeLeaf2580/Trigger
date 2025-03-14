@@ -10,7 +10,7 @@ execute positioned -19 23 6 as @p[scores={class=2,grade=2}] at @s run clear @s
 
 #播放打开末影箱的音效
     #播放延迟时间
-    scoreboard players set soundPlayer time 3
+    scoreboard players set soundPlayer time 5
 
     #播放选定的音效
     scoreboard players set soundPlayer active 14

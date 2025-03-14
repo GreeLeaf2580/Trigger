@@ -155,10 +155,54 @@
         #在大厅的玩家按下-21 24 6的木制按钮，替换这个按钮为禁止进入
         execute if block -21 24 6 wooden_button ["button_pressed_bit"=true,"facing_direction"=2] run clone 40 19 25  40 19 25   -21 24 6
 
-function levels/players_in_levels
+
+
+
+
+
+# -D1-
+    #按下石质or木制按钮，进入关卡
+
+        #在大厅的玩家按下-21 22 -6的石质按钮，运行“开始d1的函数”
+        execute if block -21 22 -6 stone_button ["button_pressed_bit"=true,"facing_direction"=3] positioned -21 22 -6 as @p[scores={class=0,grade=0}] at @s run function levels/d_1/start 
+
+        #在大厅的玩家按下-21 22 -6的木制按钮，运行“开始d1的函数”
+        execute if block -21 22 -6 wooden_button ["button_pressed_bit"=true,"facing_direction"=3] positioned -21 22 -6 as @p[scores={class=0,grade=0}] at @s run  function levels/d_1/start
+
+    #修改按钮状态，以防止按钮保持按下的状态而重复执行命令
+
+        #在大厅的玩家按下-21 22 -6的石质按钮，替换这个按钮为禁止进入
+        execute if block -21 22 -6 stone_button ["button_pressed_bit"=true,"facing_direction"=3] run clone 40 19 27  40 19 27   -21 22 -6
+
+        #在大厅的玩家按下-21 22 -6的木制按钮，替换这个按钮为禁止进入
+        execute if block -21 22 -6 wooden_button ["button_pressed_bit"=true,"facing_direction"=3] run clone 40 19 27  40 19 27   -21 22 -6
+
+# -D2-
+    #按下石质or木制按钮，进入关卡
+
+        #在大厅的玩家按下-21 23 -6的石质按钮，运行“开始d2的函数”
+        execute if block -21 23 -6 stone_button ["button_pressed_bit"=true,"facing_direction"=3] positioned -21 23 -6 as @p[scores={class=0,grade=0}] at @s run function levels/d_2/start 
+
+        #在大厅的玩家按下-21 23 -6的木制按钮，运行“开始d2的函数”
+        execute if block -21 23 -6 wooden_button ["button_pressed_bit"=true,"facing_direction"=3] positioned -21 23 -6 as @p[scores={class=0,grade=0}] at @s run  function levels/d_2/start
+
+    #修改按钮状态，以防止按钮保持按下的状态而重复执行命令
+
+        #在大厅的玩家按下-21 23 -6的石质按钮，替换这个按钮为禁止进入
+        execute if block -21 23 -6 stone_button ["button_pressed_bit"=true,"facing_direction"=3] run clone 40 19 27  40 19 27   -21 23 -6
+
+        #在大厅的玩家按下-21 23 -6的木制按钮，替换这个按钮为禁止进入
+        execute if block -21 23 -6 wooden_button ["button_pressed_bit"=true,"facing_direction"=3] run clone 40 19 27  40 19 27   -21 23 -6
+
+execute if entity @a[scores={class=0,grade=0}] run function levels/players_in_levels
+
+
+
+
+
 
 #当玩家在大厅上方的洞时变回冒险模式
-execute positioned 0 26 0 as @a[r=2,scores={class=0,grade=0},m=spectator] at @s run gamemode a @s
+execute positioned 0 26 0 as @a[r=2,scores={class=0,grade=0}] at @s run gamemode a @s
 
 
 execute as @a[scores={class=0,grade=0},m=adventure] at @s if block ~~~ water run function levels/hall/to_spectator

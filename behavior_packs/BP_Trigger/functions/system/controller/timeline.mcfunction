@@ -28,3 +28,8 @@ execute if entity @a[scores={class=2,grade=3}] run function levels/b_3/timeline
 execute if entity @a[scores={class=3,grade=1}] run function levels/c_1/timeline
 execute if entity @a[scores={class=3,grade=2}] run function levels/c_2/timeline
 execute if entity @a[scores={class=3,grade=3}] run function levels/c_3/timeline
+
+
+execute if entity @a[scores={class=4,grade=1}] run function levels/d_1/timeline
+execute if entity @a[scores={class=4,grade=2}] run function levels/d_2/timeline
+execute if entity @a[scores={class=4,grade=3}] run function levels/d_3/timeline

@@ -36,4 +36,4 @@ execute if block -58 19 24 minecraft:heavy_weighted_pressure_plate ["redstone_si
     execute if block -53 17 24 light_weighted_pressure_plate ["redstone_signal"=9] if score entityAmount data matches 9 run give @a[scores={class=1,grade=3}] carrot_on_a_stick
 
 #清除该关卡的掉落物
-execute positioned -53 19 24 run kill @e[type=item,r=8]
+execute positioned -53 19 24 run kill @e[type=item,r=16]

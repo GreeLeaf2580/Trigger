@@ -19,4 +19,4 @@ execute if block -25 17 23 light_weighted_pressure_plate ["redstone_signal"=6] r
 execute unless block -29 22 17 minecraft:carrots if block 21 22 7 concrete_powder ["color"="gray"] if score Idea1ItemGot data matches 0 run function levels/idea_1/notice
 
 #清除该关卡的掉落物
-execute positioned -25 19 23 run kill @e[type=item,r=7]
+execute positioned -25 19 23 run kill @e[type=item,r=9]

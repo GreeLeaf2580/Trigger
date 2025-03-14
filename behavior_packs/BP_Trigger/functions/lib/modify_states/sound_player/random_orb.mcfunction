@@ -12,4 +12,4 @@
 ## 启用音效播放器
 scoreboard players set soundPlayer active 1
 ## 将音效播放器时间重置
-scoreboard players set soundPlayer time 3
+scoreboard players set soundPlayer time 5
