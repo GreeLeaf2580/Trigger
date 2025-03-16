@@ -33,3 +33,13 @@ execute if entity @a[scores={class=3,grade=3}] run function levels/c_3/timeline
 execute if entity @a[scores={class=4,grade=1}] run function levels/d_1/timeline
 execute if entity @a[scores={class=4,grade=2}] run function levels/d_2/timeline
 execute if entity @a[scores={class=4,grade=3}] run function levels/d_3/timeline
+
+
+execute if entity @a[scores={class=5,grade=1}] run function levels/e_1/timeline
+execute if entity @a[scores={class=5,grade=2}] run function levels/e_2/timeline
+execute if entity @a[scores={class=5,grade=3}] run function levels/e_3/timeline
+
+
+execute if entity @a[scores={class=6,grade=1}] run function levels/f_1/timeline
+execute if entity @a[scores={class=6,grade=2}] run function levels/f_2/timeline
+execute if entity @a[scores={class=6,grade=3}] run function levels/f_3/timeline

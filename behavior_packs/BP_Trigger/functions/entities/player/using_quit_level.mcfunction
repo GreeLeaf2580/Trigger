@@ -8,6 +8,12 @@
 #清除被该关卡选中的玩家背包
 clear @s
 
+#清除药水效果
+effect @s clear
+
+#将关卡中玩家传送回选关
+tp @s -12 21 0 90 0
+
 execute if score @s class matches 1 if score @s grade matches 1 run function levels/a_1/quit
 execute if score @s class matches 1 if score @s grade matches 2 run function levels/a_2/quit
 execute if score @s class matches 1 if score @s grade matches 3 run function levels/a_3/quit
@@ -24,3 +30,12 @@ execute if score @s class matches 3 if score @s grade matches 3 run function lev
 execute if score @s class matches 4 if score @s grade matches 1 run function levels/d_1/quit
 execute if score @s class matches 4 if score @s grade matches 2 run function levels/d_2/quit
 execute if score @s class matches 4 if score @s grade matches 3 run function levels/d_3/quit
+
+
+execute if score @s class matches 5 if score @s grade matches 1 run function levels/e_1/quit
+execute if score @s class matches 5 if score @s grade matches 2 run function levels/e_2/quit
+execute if score @s class matches 5 if score @s grade matches 3 run function levels/e_3/quit
+
+execute if score @s class matches 6 if score @s grade matches 1 run function levels/f_1/quit
+execute if score @s class matches 6 if score @s grade matches 2 run function levels/f_2/quit
+execute if score @s class matches 6 if score @s grade matches 3 run function levels/f_3/quit

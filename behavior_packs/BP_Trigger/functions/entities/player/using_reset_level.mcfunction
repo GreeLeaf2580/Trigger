@@ -16,3 +16,11 @@ execute if score @s class matches 3 if score @s grade matches 3 run function lev
 execute if score @s class matches 4 if score @s grade matches 1 run function levels/d_1/reset
 execute if score @s class matches 4 if score @s grade matches 2 run function levels/d_2/reset
 execute if score @s class matches 4 if score @s grade matches 3 run function levels/d_3/reset
+
+execute if score @s class matches 5 if score @s grade matches 1 run function levels/e_1/reset
+execute if score @s class matches 5 if score @s grade matches 2 run function levels/e_2/reset
+execute if score @s class matches 5 if score @s grade matches 3 run function levels/e_3/reset
+
+execute if score @s class matches 6 if score @s grade matches 1 run function levels/f_1/reset
+execute if score @s class matches 6 if score @s grade matches 2 run function levels/f_2/reset
+execute if score @s class matches 6 if score @s grade matches 3 run function levels/f_3/reset
