@@ -250,10 +250,10 @@
 # -E3-
     #按下石质or木制按钮，进入关卡
 
-        #在大厅的玩家按下-19 24 -6的石质按钮，运行“开始e1的函数”
+        #在大厅的玩家按下-19 24 -6的石质按钮，运行“开始e3的函数”
         execute if block -19 24 -6 stone_button ["button_pressed_bit"=true,"facing_direction"=3] positioned -19 24 -6 as @p[scores={class=0,grade=0}] at @s run function levels/e_3/start 
 
-        #在大厅的玩家按下-19 24 -6的木制按钮，运行“开始e1的函数”
+        #在大厅的玩家按下-19 24 -6的木制按钮，运行“开始e3的函数”
         execute if block -19 24 -6 wooden_button ["button_pressed_bit"=true,"facing_direction"=3] positioned -19 24 -6 as @p[scores={class=0,grade=0}] at @s run  function levels/e_3/start
 
     #修改按钮状态，以防止按钮保持按下的状态而重复执行命令
