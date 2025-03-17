@@ -17,29 +17,41 @@ execute as @a at @s if entity @a[rm=1] run replaceitem entity @s slot.armor.feet
 
 execute if entity @a[scores={class=0,grade=0}] run function levels/hall/timeline
 
-execute if entity @a[scores={class=1,grade=1}] run function levels/a_1/timeline
-execute if entity @a[scores={class=1,grade=2}] run function levels/a_2/timeline
-execute if entity @a[scores={class=1,grade=3}] run function levels/a_3/timeline
+execute if entity @a[scores={class=1,grade=1}] run function levels/a1/timeline
+execute if entity @a[scores={class=1,grade=2}] run function levels/a2/timeline
+execute if entity @a[scores={class=1,grade=3}] run function levels/a3/timeline
 
-execute if entity @a[scores={class=2,grade=1}] run function levels/b_1/timeline
-execute if entity @a[scores={class=2,grade=2}] run function levels/b_2/timeline
-execute if entity @a[scores={class=2,grade=3}] run function levels/b_3/timeline
+execute if entity @a[scores={class=2,grade=1}] run function levels/b1/timeline
+execute if entity @a[scores={class=2,grade=2}] run function levels/b2/timeline
+execute if entity @a[scores={class=2,grade=3}] run function levels/b3/timeline
 
-execute if entity @a[scores={class=3,grade=1}] run function levels/c_1/timeline
-execute if entity @a[scores={class=3,grade=2}] run function levels/c_2/timeline
-execute if entity @a[scores={class=3,grade=3}] run function levels/c_3/timeline
-
-
-execute if entity @a[scores={class=4,grade=1}] run function levels/d_1/timeline
-execute if entity @a[scores={class=4,grade=2}] run function levels/d_2/timeline
-execute if entity @a[scores={class=4,grade=3}] run function levels/d_3/timeline
+execute if entity @a[scores={class=3,grade=1}] run function levels/c1/timeline
+execute if entity @a[scores={class=3,grade=2}] run function levels/c2/timeline
+execute if entity @a[scores={class=3,grade=3}] run function levels/c3/timeline
 
 
-execute if entity @a[scores={class=5,grade=1}] run function levels/e_1/timeline
-execute if entity @a[scores={class=5,grade=2}] run function levels/e_2/timeline
-execute if entity @a[scores={class=5,grade=3}] run function levels/e_3/timeline
+execute if entity @a[scores={class=4,grade=1}] run function levels/d1/timeline
+execute if entity @a[scores={class=4,grade=2}] run function levels/d2/timeline
+execute if entity @a[scores={class=4,grade=3}] run function levels/d3/timeline
 
 
-execute if entity @a[scores={class=6,grade=1}] run function levels/f_1/timeline
-execute if entity @a[scores={class=6,grade=2}] run function levels/f_2/timeline
-execute if entity @a[scores={class=6,grade=3}] run function levels/f_3/timeline
+execute if entity @a[scores={class=5,grade=1}] run function levels/e1/timeline
+execute if entity @a[scores={class=5,grade=2}] run function levels/e2/timeline
+execute if entity @a[scores={class=5,grade=3}] run function levels/e3/timeline
+
+
+execute if entity @a[scores={class=6,grade=1}] run function levels/f1/timeline
+execute if entity @a[scores={class=6,grade=2}] run function levels/f2/timeline
+execute if entity @a[scores={class=6,grade=3}] run function levels/f3/timeline
+
+
+execute if entity @a[scores={class=7,grade=1}] run function levels/x/timeline
+
+
+execute if entity @a[scores={class=8,grade=1}] run function levels/hide1/timeline
+execute if entity @a[scores={class=8,grade=2}] run function levels/hide2/timeline
+
+
+execute if entity @a[scores={class=9,grade=1}] run function levels/idea1/timeline
+execute if entity @a[scores={class=9,grade=2}] run function levels/idea2/timeline
+execute if entity @a[scores={class=9,grade=3}] run function levels/idea3/timeline

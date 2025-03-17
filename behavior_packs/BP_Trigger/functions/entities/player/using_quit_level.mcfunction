@@ -14,28 +14,28 @@ effect @s clear
 #将关卡中玩家传送回选关
 tp @s -12 21 0 90 0
 
-execute if score @s class matches 1 if score @s grade matches 1 run function levels/a_1/quit
-execute if score @s class matches 1 if score @s grade matches 2 run function levels/a_2/quit
-execute if score @s class matches 1 if score @s grade matches 3 run function levels/a_3/quit
+execute if score @s class matches 1 if score @s grade matches 1 run function levels/a1/quit
+execute if score @s class matches 1 if score @s grade matches 2 run function levels/a2/quit
+execute if score @s class matches 1 if score @s grade matches 3 run function levels/a3/quit
 
-execute if score @s class matches 2 if score @s grade matches 1 run function levels/b_1/quit
-execute if score @s class matches 2 if score @s grade matches 2 run function levels/b_2/quit
-execute if score @s class matches 2 if score @s grade matches 3 run function levels/b_3/quit
+execute if score @s class matches 2 if score @s grade matches 1 run function levels/b1/quit
+execute if score @s class matches 2 if score @s grade matches 2 run function levels/b2/quit
+execute if score @s class matches 2 if score @s grade matches 3 run function levels/b3/quit
 
-execute if score @s class matches 3 if score @s grade matches 1 run function levels/c_1/quit
-execute if score @s class matches 3 if score @s grade matches 2 run function levels/c_2/quit
-execute if score @s class matches 3 if score @s grade matches 3 run function levels/c_3/quit
-
-
-execute if score @s class matches 4 if score @s grade matches 1 run function levels/d_1/quit
-execute if score @s class matches 4 if score @s grade matches 2 run function levels/d_2/quit
-execute if score @s class matches 4 if score @s grade matches 3 run function levels/d_3/quit
+execute if score @s class matches 3 if score @s grade matches 1 run function levels/c1/quit
+execute if score @s class matches 3 if score @s grade matches 2 run function levels/c2/quit
+execute if score @s class matches 3 if score @s grade matches 3 run function levels/c3/quit
 
 
-execute if score @s class matches 5 if score @s grade matches 1 run function levels/e_1/quit
-execute if score @s class matches 5 if score @s grade matches 2 run function levels/e_2/quit
-execute if score @s class matches 5 if score @s grade matches 3 run function levels/e_3/quit
+execute if score @s class matches 4 if score @s grade matches 1 run function levels/d1/quit
+execute if score @s class matches 4 if score @s grade matches 2 run function levels/d2/quit
+execute if score @s class matches 4 if score @s grade matches 3 run function levels/d3/quit
 
-execute if score @s class matches 6 if score @s grade matches 1 run function levels/f_1/quit
-execute if score @s class matches 6 if score @s grade matches 2 run function levels/f_2/quit
-execute if score @s class matches 6 if score @s grade matches 3 run function levels/f_3/quit
+
+execute if score @s class matches 5 if score @s grade matches 1 run function levels/e1/quit
+execute if score @s class matches 5 if score @s grade matches 2 run function levels/e2/quit
+execute if score @s class matches 5 if score @s grade matches 3 run function levels/e3/quit
+
+execute if score @s class matches 6 if score @s grade matches 1 run function levels/f1/quit
+execute if score @s class matches 6 if score @s grade matches 2 run function levels/f2/quit
+execute if score @s class matches 6 if score @s grade matches 3 run function levels/f3/quit
