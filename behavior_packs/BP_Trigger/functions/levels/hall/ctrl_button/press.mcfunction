@@ -315,3 +315,24 @@
 
         #在大厅的玩家按下-17 24 -6的木制按钮，替换这个按钮为禁止进入
         execute if block -17 24 -6 wooden_button ["button_pressed_bit"=true,"facing_direction"=3] run clone 40 19 27  40 19 27   -17 24 -6
+
+
+
+
+
+# -X-
+    #按下石质or木制按钮，进入关卡
+
+        #在大厅的玩家按下-25 22 0的石质按钮，运行“开始x的函数”
+        execute if block -25 22 0 stone_button ["button_pressed_bit"=true,"facing_direction"=5] positioned -25 22 0 as @p[scores={class=0,grade=0}] at @s run function levels/x/start 
+
+        #在大厅的玩家按下-25 22 0的木制按钮，运行“开始x的函数”
+        execute if block -25 22 0 wooden_button ["button_pressed_bit"=true,"facing_direction"=5] positioned -25 22 0 as @p[scores={class=0,grade=0}] at @s run  function levels/x/start
+
+    #修改按钮状态，以防止按钮保持按下的状态而重复执行命令
+
+        #在大厅的玩家按下-25 22 0的石质按钮，替换这个按钮为禁止进入
+        execute if block -25 22 0 stone_button ["button_pressed_bit"=true,"facing_direction"=5] run clone 33 20 24  33 20 24   -25 22 0
+
+        #在大厅的玩家按下-25 22 0的木制按钮，替换这个按钮为禁止进入
+        execute if block -25 22 0 wooden_button ["button_pressed_bit"=true,"facing_direction"=5] run clone 33 20 24  33 20 24   -25 22 0

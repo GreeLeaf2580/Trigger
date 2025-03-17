@@ -39,3 +39,5 @@ execute if score @s class matches 5 if score @s grade matches 3 run function lev
 execute if score @s class matches 6 if score @s grade matches 1 run function levels/f1/quit
 execute if score @s class matches 6 if score @s grade matches 2 run function levels/f2/quit
 execute if score @s class matches 6 if score @s grade matches 3 run function levels/f3/quit
+
+execute if score @s class matches 7 if score @s grade matches 1 run function levels/x/quit

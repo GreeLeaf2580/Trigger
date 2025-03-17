@@ -135,3 +135,15 @@
 
     #如果是表示通过的绿色混凝土粉末，则替换为木头按钮和绿色混凝土粉末
     execute if blocks 40 19 27  40 19 27   -17 24 -6 all unless entity @a[scores={class=6,grade=3}] if block -17 24 -7 concrete_powder ["color"="green"] run clone 40 16 27   40 16 26   -17 24 -7 replace force
+
+
+
+
+
+
+#如果x里被占用（-25 22 0为33 20 24的禁止进入），且x里没有人，则解除占用
+    #如果是表示未通过的黄色混凝土，则替换为石头按钮和黄色混凝土
+    execute if blocks 33 20 24  33 20 24   -25 22 0 all unless entity @a[scores={class=7,grade=1}] if block -26 22 0 concrete ["color"="yellow"] run clone 33 15 24   32 18 24   -26 22 0 replace force
+
+    #如果是表示通过的黄绿色陶瓦，则替换为木头按钮和黄绿色陶瓦
+    execute if blocks 33 20 24  33 20 24   -25 22 0 all unless entity @a[scores={class=7,grade=1}] if block -26 22 0 stained_hardened_clay ["color"="lime"] run  clone 33 15 22   32 18 22   -26 22 0 replace force
