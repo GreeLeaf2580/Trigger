@@ -1,3 +1,6 @@
+#将小米长大
+setblock -66 35 254 minecraft:wheat ["growth"=7]
+
 #显示解锁提示信息
 tellraw @a {"rawtext": [{"text":"[X]已解锁隐藏关②[风吹麦浪]"}]}
 

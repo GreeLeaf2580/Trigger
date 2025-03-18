@@ -31,5 +31,8 @@ title @a[scores={class=7,grade=1}] actionbar 环环相扣，当心过河拆桥
 #更改重生点为X
 spawnpoint @a[scores={class=7,grade=1}] 1 21 254
 
+#在x里允许掉落
+gamerule doentitydrops true
+
 #执行重置该关卡的函数
 function levels/x/reset

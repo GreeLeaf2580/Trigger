@@ -18,7 +18,13 @@ execute positioned 0 20 23 run kill @e[type=chicken,r=5]
 tp @a[scores={class=7,grade=1}] -12 21 0 90 0
 
 #更改重生点为大厅
-spawnpoint @s[scores={class=7,grade=1}] 0 21 0
+spawnpoint @a[scores={class=7,grade=1}] 0 21 0
+
+#清除药水效果
+effect @a[scores={class=7,grade=1}] clear
+
+#不在x里不允许掉落
+gamerule doentitydrops false
 
 #修改被该关卡选中的玩家的计分项
     #修改类型为0大厅

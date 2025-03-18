@@ -30,6 +30,15 @@ title @a[scores={class=7,grade=1}] subtitle -X-
 #将被该关卡选中的玩家显示活动栏
 title @a[scores={class=7,grade=1}] actionbar 环环相扣，当心过河拆桥
 
+#更改重生点为X
+spawnpoint @a[scores={class=7,grade=1}] 1 21 254
+
+#在x里允许掉落
+gamerule doentitydrops true
+
+#清除药水效果
+effect @a[scores={class=7,grade=1}] clear
+
 #上半部分 /structure save Xup -73 45 265   -30 21 244 disk
 structure load Xup -73 21 244 0_degrees none true true false
 #下半部分 /structure save Xdown -29 38 262   6 21 246 disk
