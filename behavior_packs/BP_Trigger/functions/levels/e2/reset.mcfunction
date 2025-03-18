@@ -11,12 +11,11 @@ clear @a[scores={class=5,grade=2}]
     #给予“退出关卡”
     execute as @a[scores={class=5,grade=2}] at @s run replaceitem entity @s slot.hotbar 8 trigger:quit 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
 
-    #将被该关卡选中的玩家传送至选关，该关卡开始
-    #将被该关卡选中的玩家传送至选关
-    tp @a[scores={class=5,grade=2}] -25 23 155 facing -19 22 161
+#将被该关卡选中的玩家传送至该关卡开始
+tp @a[scores={class=5,grade=2}] -25 23 155 facing -19 22 161
 
-    #清除在里的非玩家实体
-    execute positioned -25 23 155 run kill @e[type=!player,r=9]
+#清除在里的非玩家实体
+execute positioned -25 23 155 run kill @e[type=!player,r=9]
 
 #给予被选中玩家效果
     #水下呼吸

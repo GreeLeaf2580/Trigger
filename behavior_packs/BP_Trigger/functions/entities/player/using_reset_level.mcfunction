@@ -1,6 +1,12 @@
 #播放末影人音效
 playsound mob.endermen.portal @s ~ ~ ~ 10 1 10
 
+#清除被该关卡选中的玩家背包
+clear @s
+
+#清除药水效果
+effect @s clear
+
 execute if score @s class matches 1 if score @s grade matches 1 run function levels/a1/reset
 execute if score @s class matches 1 if score @s grade matches 2 run function levels/a2/reset
 execute if score @s class matches 1 if score @s grade matches 3 run function levels/a3/reset
@@ -26,3 +32,10 @@ execute if score @s class matches 6 if score @s grade matches 2 run function lev
 execute if score @s class matches 6 if score @s grade matches 3 run function levels/f3/reset
 
 execute if score @s class matches 7 if score @s grade matches 1 run function levels/x/reset
+
+execute if score @s class matches 8 if score @s grade matches 1 run function levels/hide1/reset
+execute if score @s class matches 8 if score @s grade matches 2 run function levels/hide2/reset
+
+execute if score @s class matches 9 if score @s grade matches 1 run function levels/idea1/reset
+execute if score @s class matches 9 if score @s grade matches 2 run function levels/idea2/reset
+execute if score @s class matches 9 if score @s grade matches 3 run function levels/idea3/reset

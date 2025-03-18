@@ -336,3 +336,94 @@
 
         #在大厅的玩家按下-25 22 0的木制按钮，替换这个按钮为禁止进入
         execute if block -25 22 0 wooden_button ["button_pressed_bit"=true,"facing_direction"=5] run clone 33 20 24  33 20 24   -25 22 0
+
+
+
+    
+
+# -Hide1-
+    #按下石质or木制按钮，进入关卡
+
+        #在大厅的玩家按下20 23 6的石质按钮，运行“开始hide1的函数”
+        execute if block 20 23 6 stone_button ["button_pressed_bit"=true,"facing_direction"=2] positioned 20 23 6 as @p[scores={class=0,grade=0}] at @s run function levels/hide1/start 
+
+        #在大厅的玩家按下20 23 6的木制按钮，运行“开始hide1的函数”
+        execute if block 20 23 6 wooden_button ["button_pressed_bit"=true,"facing_direction"=2] positioned 20 23 6 as @p[scores={class=0,grade=0}] at @s run  function levels/hide1/start
+
+    #修改按钮状态，以防止按钮保持按下的状态而重复执行命令
+
+        #在大厅的玩家按下20 23 6的石质按钮，替换这个按钮为禁止进入
+        execute if block 20 23 6 stone_button ["button_pressed_bit"=true,"facing_direction"=2] run clone 40 19 25  40 19 25   20 23 6
+
+        #在大厅的玩家按下20 23 6的木制按钮，替换这个按钮为禁止进入
+        execute if block 20 23 6 wooden_button ["button_pressed_bit"=true,"facing_direction"=2] run clone 40 19 25  40 19 25   20 23 6
+
+# -Hide2-
+    #按下石质or木制按钮，进入关卡
+
+        #在大厅的玩家按下18 23 6的石质按钮，运行“开始hide2的函数”
+        execute if block 18 23 6 stone_button ["button_pressed_bit"=true,"facing_direction"=2] positioned 18 23 6 as @p[scores={class=0,grade=0}] at @s run function levels/hide2/start 
+
+        #在大厅的玩家按下18 23 6的木制按钮，运行“开始hide2的函数”
+        execute if block 18 23 6 wooden_button ["button_pressed_bit"=true,"facing_direction"=2] positioned 18 23 6 as @p[scores={class=0,grade=0}] at @s run  function levels/hide2/start
+
+    #修改按钮状态，以防止按钮保持按下的状态而重复执行命令
+
+        #在大厅的玩家按下18 23 6的石质按钮，替换这个按钮为禁止进入
+        execute if block 18 23 6 stone_button ["button_pressed_bit"=true,"facing_direction"=2] run clone 40 19 25  40 19 25   18 23 6
+
+        #在大厅的玩家按下18 23 6的木制按钮，替换这个按钮为禁止进入
+        execute if block 18 23 6 wooden_button ["button_pressed_bit"=true,"facing_direction"=2] run clone 40 19 25  40 19 25   18 23 6
+
+
+
+# -Idea1-
+    #按下石质or木制按钮，进入关卡
+
+        #在大厅的玩家按下21 23 6的石质按钮，运行“开始idea1的函数”
+        execute if block 21 23 6 stone_button ["button_pressed_bit"=true,"facing_direction"=2] positioned 21 23 6 as @p[scores={class=0,grade=0}] at @s run function levels/idea1/start 
+
+        #在大厅的玩家按下21 23 6的木制按钮，运行“开始idea1的函数”
+        execute if block 21 23 6 wooden_button ["button_pressed_bit"=true,"facing_direction"=2] positioned 21 23 6 as @p[scores={class=0,grade=0}] at @s run  function levels/idea1/start
+
+    #修改按钮状态，以防止按钮保持按下的状态而重复执行命令
+
+        #在大厅的玩家按下21 23 6的石质按钮，替换这个按钮为禁止进入
+        execute if block 21 23 6 stone_button ["button_pressed_bit"=true,"facing_direction"=2] run clone 40 19 25  40 19 25   21 23 6
+
+        #在大厅的玩家按下21 23 6的木制按钮，替换这个按钮为禁止进入
+        execute if block 21 23 6 wooden_button ["button_pressed_bit"=true,"facing_direction"=2] run clone 40 19 25  40 19 25   21 23 6
+
+# -Idea2-
+    #按下石质or木制按钮，进入关卡
+
+        #在大厅的玩家按下19 23 6的石质按钮，运行“开始idea2的函数”
+        execute if block 19 23 6 stone_button ["button_pressed_bit"=true,"facing_direction"=2] positioned 19 23 6 as @p[scores={class=0,grade=0}] at @s run function levels/idea2/start 
+
+        #在大厅的玩家按下19 23 6的木制按钮，运行“开始idea2的函数”
+        execute if block 19 23 6 wooden_button ["button_pressed_bit"=true,"facing_direction"=2] positioned 19 23 6 as @p[scores={class=0,grade=0}] at @s run  function levels/idea2/start
+
+    #修改按钮状态，以防止按钮保持按下的状态而重复执行命令
+
+        #在大厅的玩家按下19 23 6的石质按钮，替换这个按钮为禁止进入
+        execute if block 19 23 6 stone_button ["button_pressed_bit"=true,"facing_direction"=2] run clone 40 19 25  40 19 25   19 23 6
+
+        #在大厅的玩家按下19 23 6的木制按钮，替换这个按钮为禁止进入
+        execute if block 19 23 6 wooden_button ["button_pressed_bit"=true,"facing_direction"=2] run clone 40 19 25  40 19 25   19 23 6
+
+# -Idea3-
+    #按下石质or木制按钮，进入关卡
+
+        #在大厅的玩家按下17 23 6的石质按钮，运行“开始idea3的函数”
+        execute if block 17 23 6 stone_button ["button_pressed_bit"=true,"facing_direction"=2] positioned 17 23 6 as @p[scores={class=0,grade=0}] at @s run function levels/idea3/start 
+
+        #在大厅的玩家按下17 23 6的木制按钮，运行“开始idea3的函数”
+        execute if block 17 23 6 wooden_button ["button_pressed_bit"=true,"facing_direction"=2] positioned 17 23 6 as @p[scores={class=0,grade=0}] at @s run  function levels/idea3/start
+
+    #修改按钮状态，以防止按钮保持按下的状态而重复执行命令
+
+        #在大厅的玩家按下17 23 6的石质按钮，替换这个按钮为禁止进入
+        execute if block 17 23 6 stone_button ["button_pressed_bit"=true,"facing_direction"=2] run clone 40 19 25  40 19 25   17 23 6
+
+        #在大厅的玩家按下17 23 6的木制按钮，替换这个按钮为禁止进入
+        execute if block 17 23 6 wooden_button ["button_pressed_bit"=true,"facing_direction"=2] run clone 40 19 25  40 19 25   17 23 6

@@ -13,6 +13,7 @@
             "minecraft:knockback_resistance": { "value": 1 },
             "minecraft:persistent": { },
             "minecraft:navigation.walk": { "can_path_over_water": true, "can_pass_doors": false, "can_open_doors": false, "avoid_water": true,"can_jump": false,"avoid_damage_blocks": true},
+            "minecraft:interact": { "interactions": [ { "interact_text": "action.interact.chat", "on_interact": { "event": "interacted" }, "swing": true } ] },
             "minecraft:movement": {"value": 0.23},
             "minecraft:nameable": { "allow_name_tag_renaming": true, "always_show": true },
             "minecraft:behavior.random_stroll": { "priority": 7, "speed_multiplier": 1 },

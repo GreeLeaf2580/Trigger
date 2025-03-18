@@ -13,7 +13,6 @@ clear @a[scores={class=3,grade=1}]
 
     #给予红石
     give @a[scores={class=3,grade=1}] redstone 6 0 {"minecraft:can_place_on":{"blocks":["sandstone"]}}
-    give @s iron_pickaxe 1 0 {"minecraft:can_destory":{"blocks":["stained_glass"]}}
 
 #关卡地形覆盖
 clone -5 10 84 5 10 94 -5 21 84 replace force
