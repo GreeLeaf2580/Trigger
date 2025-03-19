@@ -29,7 +29,7 @@ tp @a[scores={class=8,grade=1}] 19 21 4 facing 19 21 6
 
 #开启接下来的关卡，修改大厅关卡显示
     #首次通过显示粒子效果
-    if block 20 23  7 stained_hardened_clay ["color"="yellow"] run fill 20 22 6 20 25 7 air [] destroy
+    execute if block 20 23  7 stained_hardened_clay ["color"="yellow"] run fill 20 22 6 20 25 7 air [] destroy
 
     #显示该关卡已通关
     clone 37 15 39 37 18 40 20 22 6

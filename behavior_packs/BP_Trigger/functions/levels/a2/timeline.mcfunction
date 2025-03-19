@@ -1,5 +1,5 @@
 #检测关卡的通关条件
-execute if block -25 17 23 light_weighted_pressure_plate ["redstone_signal"=6] run function levels/a2/complete
+execute if block -25 17 23 light_weighted_pressure_plate ["redstone_signal"=6] if score entityAmount data matches 3 run function levels/a2/complete
 
 
 #检测后继条件
