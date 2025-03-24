@@ -44,4 +44,6 @@ item.trigger:quit.name=§bQuit Level
 item.trigger:reset.name=§aReset Level
 
 tile.frame.name=Item Frame
-item.spawn_egg.entity.trigger:npc_author.name=spawn npc author
+item.spawn_egg.entity.trigger:npc_author.name=NPC Spawn Egg
+
+action.interact.chat=Chat
