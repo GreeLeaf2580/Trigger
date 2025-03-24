@@ -11,8 +11,6 @@ clear @s
 #清除药水效果
 effect @s clear
 
-#将关卡中玩家传送回选关
-tp @s -12 21 0 90 0
 
 execute if score @s class matches 1 if score @s grade matches 1 run function levels/a1/quit
 execute if score @s class matches 1 if score @s grade matches 2 run function levels/a2/quit
