@@ -1,108 +1,72 @@
 {
-    "format_version": "1.17.0",
+    "format_version": "1.20.10",
     "minecraft:entity": {
         "description": {
             "identifier": "trigger:npc_author",
             "is_experimental": false,
             "is_spawnable": true,
-            "is_summonable": true
+            "is_summonable": true,
+            "scripts": { "animate": [ "interact_and_attack_test", "effects" ] },
+            "animations": {
+                "interact_and_attack_test": "controller.animation.npc.interact_and_attack_test",
+                "effects": "animation.npc.effects"
+            }
         },
         "components": {
-            "minecraft:physics": { "has_collision": true, "has_gravity": true },
-            "minecraft:health": { "value": 1, "max": 1 },
+            "minecraft:physics": { },
+            "minecraft:collision_box": { "height": 1.8, "width": 0.6 },
+            "minecraft:type_family": { "family": [ "npc" ] },
             "minecraft:knockback_resistance": { "value": 1 },
             "minecraft:persistent": { },
-            "minecraft:navigation.walk": { "can_path_over_water": true, "can_pass_doors": false, "can_open_doors": false, "avoid_water": true,"can_jump": false,"avoid_damage_blocks": true},
-            "minecraft:interact": { "interactions": [ { "interact_text": "action.interact.chat", "on_interact": { "event": "interacted" }, "swing": true } ] },
-            "minecraft:movement": {"value": 0.23},
+            "minecraft:health": { "value": 20, "max": 20 },
             "minecraft:nameable": { "allow_name_tag_renaming": true, "always_show": true },
-            "minecraft:behavior.random_stroll": { "priority": 7, "speed_multiplier": 1 },
-			"minecraft:behavior.look_at_player": { "priority": 9, "look_distance": 6, "probability": 0.02 },
-			"minecraft:behavior.random_look_around": { "priority": 8 },
-            "minecraft:type_family": { "family": [ "npc", "trigger_npc", "author" ] },
-            "minecraft:collision_box": { "height": 1.8, "width": 0.6 },
-            "minecraft:damage_sensor": { "triggers": [ { "cause": "all", "deals_damage": false } ] },
-            "minecraft:movement.basic": { }
+            "minecraft:mark_variant": { "value": 0 },
+            "minecraft:damage_sensor": { "triggers": [
+                { "on_damage": { "event": "attacked", "target": "self" } }
+            ] },
+            "minecraft:interact": {
+                "interactions": [
+                    { "on_interact": { "event": "interacted", "target": "self" }, "interact_text": "action.interact.chat" }
+                ]
+            }
+
         },
         "events": {
+            "interacted": { "remove": { "component_groups": [ "default_state" ] }, "add": { "component_groups": [ "interacted" ] } },
+            "attacked": { "remove": { "component_groups": [ "default_state" ] }, "add": { "component_groups": [ "attacked" ] } },
+            "interacted_reset": { "remove": { "component_groups": [ "interacted" ] }, "add": { "component_groups": [ "default_state" ] } },
+            "attacked_reset": { "remove": { "component_groups": [ "attacked" ] }, "add": { "component_groups": [ "default_state" ] } },
+
             "minecraft:entity_spawned": {
                 "randomize": [
-                    { "add": { "component_groups": [ "should_see_player", "variant_0" ] }, "weight": 1 },
-                    { "add": { "component_groups": [ "should_see_player", "variant_1" ] }, "weight": 1 },
-                    { "add": { "component_groups": [ "should_see_player", "variant_2" ] }, "weight": 1 },
-                    { "add": { "component_groups": [ "should_see_player", "variant_3" ] }, "weight": 1 },
-                    { "add": { "component_groups": [ "should_see_player", "variant_4" ] }, "weight": 1 },
-                    { "add": { "component_groups": [ "should_see_player", "variant_5" ] }, "weight": 1 },
-                    { "add": { "component_groups": [ "should_see_player", "variant_6" ] }, "weight": 1 },
-                    { "add": { "component_groups": [ "should_see_player", "variant_7" ] }, "weight": 1 },
-                    { "add": { "component_groups": [ "should_see_player", "variant_8" ] }, "weight": 1 },
-                    { "add": { "component_groups": [ "should_see_player", "variant_9" ] }, "weight": 1 },
-                    { "add": { "component_groups": [ "should_see_player", "variant_10" ] }, "weight": 1 },
-                    { "add": { "component_groups": [ "should_see_player", "variant_11" ] }, "weight": 1 },
-                    { "add": { "component_groups": [ "should_see_player", "variant_12" ] }, "weight": 1 },
-                    { "add": { "component_groups": [ "should_see_player", "variant_13" ] }, "weight": 1 },
-                    { "add": { "component_groups": [ "should_see_player", "variant_14" ] }, "weight": 1 },
-                    { "add": { "component_groups": [ "should_see_player", "variant_15" ] }, "weight": 1 },
-                    { "add": { "component_groups": [ "should_see_player", "variant_16" ] }, "weight": 1 },
-                    { "add": { "component_groups": [ "should_see_player", "variant_17" ] }, "weight": 1 },
-                    { "add": { "component_groups": [ "should_see_player", "variant_18" ] }, "weight": 1 }
+                    { "add": { "component_groups": [ "should_see_player", "skin_0" ] }, "weight": 1 },
+                    { "add": { "component_groups": [ "should_see_player", "skin_1" ] }, "weight": 1 },
+                    { "add": { "component_groups": [ "should_see_player", "skin_2" ] }, "weight": 1 },
+                    { "add": { "component_groups": [ "should_see_player", "skin_3" ] }, "weight": 1 },
+                    { "add": { "component_groups": [ "should_see_player", "skin_4" ] }, "weight": 1 }
                 ]
             },
-            "interacted": { "add": { "component_groups": [ "interacted" ] } },
-            "interacted_reset": { "remove": { "component_groups": [ "interacted" ] } },
-
-            "npc_yzbwdlt": { "add": { "component_groups": [ "should_see_player", "variant_0" ] } },
-            "npc_andy7343": { "add": { "component_groups": [ "should_see_player", "variant_1" ] } },
-            "npc_greeleaf": { "add": { "component_groups": [ "should_see_player", "variant_2" ] } },
-            "npc_pigeonki": { "add": { "component_groups": [ "should_see_player", "variant_3" ] } },
-            "npc_kriswenyu": { "add": { "component_groups": [ "should_see_player", "variant_4" ] } },
-            "npc_pumpkinjui": { "add": { "component_groups": [ "should_see_player", "variant_5" ] } },
-            "npc_xiaoshu512": { "add": { "component_groups": [ "should_see_player", "variant_6" ] } },
-            "npc_tuffy2020china": { "add": { "component_groups": [ "should_see_player", "variant_7" ] } },
-            "npc_animalchalk2526": { "add": { "component_groups": [ "should_see_player", "variant_8" ] } },
-            "npc_kianakasnala947": { "add": { "component_groups": [ "should_see_player", "variant_9" ] } },
-            "npc_xc13599305": { "add": { "component_groups": [ "should_see_player", "variant_10" ] } },
-            "npc_hfpa0117": { "add": { "component_groups": [ "should_see_player", "variant_11" ] } },
-            "npc_ender5207541": { "add": { "component_groups": [ "should_see_player", "variant_12" ] } },
-            "npc_rustyabyss29193": { "add": { "component_groups": [ "should_see_player", "variant_13" ] } },
-            "npc_enderlife5409": { "add": { "component_groups": [ "should_see_player", "variant_14" ] } },
-            "npc_onekitty710926": { "add": { "component_groups": [ "should_see_player", "variant_15" ] } },
-            "npc_foxlanmo": { "add": { "component_groups": [ "should_see_player", "variant_16" ] } },
-            "npc_kuanpan9527": { "add": { "component_groups": [ "should_see_player", "variant_17" ] } },
-            "npc_longlongxiaotao": { "add": { "component_groups": [ "should_see_player", "variant_18" ] } },
-
+            "skin_0": { "add": { "component_groups": [ "should_see_player", "skin_0" ] } },
+            "skin_1": { "add": { "component_groups": [ "should_see_player", "skin_1" ] } },
+            "skin_2": { "add": { "component_groups": [ "should_see_player", "skin_2" ] } },
+            "skin_3": { "add": { "component_groups": [ "should_see_player", "skin_3" ] } },
+            "skin_4": { "add": { "component_groups": [ "should_see_player", "skin_4" ] } },
             "should_see_player": { "add": { "component_groups": [ "should_see_player" ] } },
             "should_not_see_player": { "remove": { "component_groups": [ "should_see_player" ] } }
+
         },
         "component_groups": {
-            "variant_0": { "minecraft:variant": { "value": 0 } },
-            "variant_1": { "minecraft:variant": { "value": 1 } },
-            "variant_2": { "minecraft:variant": { "value": 2 } },
-            "variant_3": { "minecraft:variant": { "value": 3 } },
-            "variant_4": { "minecraft:variant": { "value": 4 } },
-            "variant_5": { "minecraft:variant": { "value": 5 } },
-            "variant_6": { "minecraft:variant": { "value": 6 } },
-            "variant_7": { "minecraft:variant": { "value": 7 } },
-            "variant_8": { "minecraft:variant": { "value": 8 } },
-            "variant_9": { "minecraft:variant": { "value": 9 } },
-            "variant_10": { "minecraft:variant": { "value": 10 } },
-            "variant_11": { "minecraft:variant": { "value": 11 } },
-            "variant_12": { "minecraft:variant": { "value": 12 } },
-            "variant_13": { "minecraft:variant": { "value": 13 } },
-            "variant_14": { "minecraft:variant": { "value": 14 } },
-            "variant_15": { "minecraft:variant": { "value": 15 } },
-            "variant_16": { "minecraft:variant": { "value": 16 } },
-            "variant_17": { "minecraft:variant": { "value": 17 } },
-            "variant_18": { "minecraft:variant": { "value": 18 } },
+            "default_state": { "minecraft:mark_variant": { "value": 0 } },
+            "interacted": { "minecraft:mark_variant": { "value": 1 } },
+            "attacked": { "minecraft:mark_variant": { "value": 2 } },
 
-            "interacted": {
-                "minecraft:type_family": { "family": [ "npc", "trigger_npc", "author", "interacted" ] },
-                "minecraft:timer": { "time": 0.05, "time_down_event": { "event": "interacted_reset", "target": "self" } }
-            },
+            "skin_0": { "minecraft:variant": { "value": 0 } },
+            "skin_1": { "minecraft:variant": { "value": 1 } },
+            "skin_2": { "minecraft:variant": { "value": 2 } },
+            "skin_3": { "minecraft:variant": { "value": 3 } },
+            "skin_4": { "minecraft:variant": { "value": 4 } },
+            "should_see_player": { "minecraft:behavior.look_at_player": { "priority": 1 } }
 
-            "should_see_player": {
-                "minecraft:behavior.look_at_player": { "priority": 1 }
-            }
         }
     }
 }
