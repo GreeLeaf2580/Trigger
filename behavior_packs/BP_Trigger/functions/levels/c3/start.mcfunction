@@ -20,7 +20,7 @@ execute positioned -21 24 6 as @p[scores={class=3,grade=3}] at @s run clear @s
 tp @a[scores={class=3,grade=3}] -54 21 89 facing -58 22 99
 
 #将被该关卡选中的玩家显示标题
-title @a[scores={class=3,grade=3}] title 遗尘“慢”步
+title @a[scores={class=3,grade=3}] title 绿洲之下
 
 #将被该关卡选中的玩家显示副标题
 title @a[scores={class=3,grade=3}] subtitle -C3-

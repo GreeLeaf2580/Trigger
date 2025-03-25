@@ -32,4 +32,4 @@ tp @a[scores={class=3,grade=3}] -12 21 0 90 0
     #显示通过该类型
     execute if block -21 25 7 concrete_powder ["color"="gray"] run function levels/c3/cheer
 
-    execute if score Idea2ItemGot data matches 1 run function levels/idea2/unlock
+    execute if score Idea2ItemGot data matches 1 run function levels/idea2/itemGot

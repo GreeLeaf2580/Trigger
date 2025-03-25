@@ -42,5 +42,5 @@ effect @a[scores={class=7,grade=1}] clear
 ##关卡结构重置
     #上半部分 /structure save Xup -73 45 265   -30 21 244 disk
     structure load Xup -73 21 244 0_degrees none true true false
-    #下半部分 /structure save Xdown -29 38 262   6 21 246 disk
-    structure load Xdown -29 21 246 0_degrees none true true false
+    #下半部分 /structure save Xdown -29 38 262   6 20 246 disk
+    structure load Xdown -29 20 246 0_degrees none true true false

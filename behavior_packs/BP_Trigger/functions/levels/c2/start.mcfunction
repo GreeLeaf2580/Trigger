@@ -20,7 +20,7 @@ execute positioned -21 23 6 as @p[scores={class=3,grade=2}] at @s run clear @s
 tp @a[scores={class=3,grade=2}] -25 21 89 facing -25 21 95
 
 #将被该关卡选中的玩家显示标题
-title @a[scores={class=3,grade=2}] title 缓慢与抉择
+title @a[scores={class=3,grade=2}] title 快或慢
 
 #将被该关卡选中的玩家显示副标题
 title @a[scores={class=3,grade=2}] subtitle -C2-

@@ -31,4 +31,4 @@ tp @a[scores={class=2,grade=3}] -12 21 0 90 0
     #显示通过该类型
     execute if block -19 25 7 stained_hardened_clay ["color"="cyan"] run function levels/b3/cheer
 
-    execute if score Idea3ItemGot data matches 1 run function levels/idea3/unlock
+    execute if score Idea3ItemGot data matches 1 run function levels/idea3/itemGot

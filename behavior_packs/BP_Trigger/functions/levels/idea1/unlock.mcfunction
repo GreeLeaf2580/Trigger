@@ -1,5 +1,23 @@
-#显示解锁提示信息
-tellraw @a {"rawtext": [{"text":"[A2]获得纪念品[胡萝卜]，请开启奖励关①后再游玩关卡"}]}
+#开启该奖励关
 
-#开启该关卡
-give @p[scores={class=0,grade=0}] carrot 1 0 {"minecraft:can_place_on":{"blocks":["frame"]}}
+#粒子效果
+fill 21 22 6 21 25 7 air [] destroy
+
+#播放解锁的音效
+    #播放延迟时间
+    scoreboard players set soundPlayer time 5
+
+    #播放选定的音效
+    scoreboard players set soundPlayer active 9
+
+#开启idea1
+clone 38 15 35 38 18 36 21 22 6
+
+#清除信物
+execute positioned as @e[type=trigger:npc_author] run clear @p minecraft:carrot -1
+
+#作者对话
+tellraw @a {"rawtext": [{"text":"<GreeLeaf> 感谢你找到了丢失的信物，这就为你开启奖励关"}]}
+
+#显示解锁提示信息
+tellraw @a {"rawtext": [{"text":"[IDEA 1]已解锁奖励关①[跑酷之路]"}]}

@@ -33,4 +33,4 @@ tp @a[scores={class=1,grade=2}] -12 21 0 90 0
     execute if block -17 24 7 concrete_powder ["color"="gray"] run clone 40 17 26 40 17 25 -17 24 6 replace force
 
     #如果达到了解锁条件，则执行解锁函数
-    execute if score Idea1ItemGot data matches 1 run function levels/idea1/unlock
+    execute if score Idea1ItemGot data matches 1 run function levels/idea1/itemGot

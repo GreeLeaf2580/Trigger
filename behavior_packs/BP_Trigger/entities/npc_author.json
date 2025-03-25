@@ -21,9 +21,7 @@
             "minecraft:health": { "value": 20, "max": 20 },
             "minecraft:nameable": { "allow_name_tag_renaming": true, "always_show": true },
             "minecraft:mark_variant": { "value": 0 },
-            "minecraft:damage_sensor": { "triggers": [
-                { "on_damage": { "event": "attacked", "target": "self" } }
-            ] },
+            "minecraft:damage_sensor": { "triggers": [ { "cause": "all", "deals_damage": false } ] },
             "minecraft:interact": {
                 "interactions": [
                     { "on_interact": { "event": "interacted", "target": "self" }, "interact_text": "action.interact.chat" }

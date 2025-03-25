@@ -14,6 +14,6 @@ execute as @a[scores={class=0,grade=0},m=adventure] at @s[x=0,y=20,z=0,dx=3,dy=3
 
 execute as @a[scores={class=0,grade=0},m=spectator,rx=-85] if entity @a[scores={class=!0,grade=!0}] run tp @s @r[scores={class=!0,grade=!0}]
 
-execute as @a[scores={class=0,grade=0},m=spectator,rx=-85] unless entity @a[scores={class=!0,grade=!0}] run tellraw @s {"rawtext": [{"text":"§e*未找到正在游玩的玩家"}]}
+execute as @a[scores={class=0,grade=0},m=spectator,rx=-85] unless entity @a[scores={class=!0,grade=!0}] run tellraw @s {"rawtext": [{"text":"§e*未找到正在游玩的玩家，将您送回大厅"}]}
 
-execute as @a[scores={class=0,grade=0},m=spectator,rx=-85] unless entity @a[scores={class=!0,grade=!0}] run tp @s @s
+execute as @a[scores={class=0,grade=0},m=spectator,rx=-85] unless entity @a[scores={class=!0,grade=!0}] run tp @s 0 26 0  180 0

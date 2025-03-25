@@ -6,16 +6,11 @@
             "states": {
                 "default": {
                     "transitions": [
-                        { "interacted": "query.mark_variant==1" },
-                        { "attacked": "query.mark_variant==2" }
+                        { "interacted": "query.mark_variant==1" }
                     ]
                 },
                 "interacted": {
                     "on_entry": [ "/function entities/npc/interacted", "@s interacted_reset" ],
-                    "transitions": [ { "default": "1" } ]
-                },
-                "attacked": {
-                    "on_entry": [ "/function entities/npc/attacked", "@s attacked_reset" ],
                     "transitions": [ { "default": "1" } ]
                 }
             }
