@@ -21,7 +21,7 @@ clear @a[scores={class=1,grade=3}]
     give @a[scores={class=1,grade=3}] carrot 64 0
 
 #清除在a3里的除玩家外的生物
-execute positioned -53 19 24 run kill @e[type=!player,r=8]
+execute positioned -53 19 24 run kill @e[type=!player,r=16]
 
 #在-48 19 20起点生成兔子
 summon minecraft:chicken -48 19 20  0 0 minecraft:ageable_grow_up

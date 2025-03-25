@@ -18,8 +18,8 @@ clear @a[scores={class=1,grade=2}]
     give @a[scores={class=1,grade=2}] carrot 64 0
 
 #清除在a2里的小鸡和兔子
-execute positioned -25 19 23 run kill @e[type=chicken,r=6]
-execute positioned -25 19 23 run kill @e[type=rabbit,r=6]
+execute positioned -25 19 23 run kill @e[type=chicken,r=9]
+execute positioned -25 19 23 run kill @e[type=rabbit,r=9]
 
 #在-29 19 19起点生成兔子
 summon minecraft:rabbit -29 19 19 0 0 grow_up 

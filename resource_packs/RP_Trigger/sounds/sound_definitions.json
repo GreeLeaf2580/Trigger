@@ -1,0 +1,7 @@
+{
+    "random.toast_challenge_complete":{
+        "category":"hostile",
+        "min_distance":100.0,
+        "sounds":["sounds/random/toast_challenge_complete"]
+    }
+}

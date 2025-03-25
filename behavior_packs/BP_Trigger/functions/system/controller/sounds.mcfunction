@@ -47,6 +47,10 @@ execute if score soundPlayer time matches 0 if score soundPlayer active matches 
 execute if score soundPlayer time matches 0 if score soundPlayer active matches 16 as @a at @s run playsound random.levelup @s ~~~ 1 0.5
 execute if score soundPlayer time matches 0 if score soundPlayer active matches 16 as @a at @s run summon fireworks_rocket ~~~
 
+## 17 | random.toast_challenge_complete | 音调1
+execute if score soundPlayer time matches 0 if score soundPlayer active matches 17 as @a at @s run playsound random.toast_challenge_complete @s ~~~
+execute if score soundPlayer time matches 0 if score soundPlayer active matches 17 as @a at @s run summon fireworks_rocket ~~~
+
 # --- 重置音效播放器 ---
 # 当音效倒计时为0后执行
 execute if score soundPlayer time matches 0 run function lib/modify_states/sound_player/reset

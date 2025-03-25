@@ -12,8 +12,8 @@ tellraw @a {"rawtext": [{"text":"[A2]已通过！"}]}
 clear @a[scores={class=1,grade=2}]
 
 #清除该关卡内的生物
-execute positioned -25 20 23 run kill @e[type=chicken,r=5]
-execute positioned -25 20 23 run kill @e[type=rabbit,r=5]
+execute positioned -25 20 23 run kill @e[type=chicken,r=9]
+execute positioned -25 20 23 run kill @e[type=rabbit,r=9]
 
 #将被该关卡选中的玩家传送回选关
 tp @a[scores={class=1,grade=2}] -12 21 0 90 0

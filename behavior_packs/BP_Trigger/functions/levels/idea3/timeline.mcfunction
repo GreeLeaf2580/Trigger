@@ -8,4 +8,4 @@ execute if block -113 28 153 minecraft:stone_pressure_plate ["redstone_signal"=1
 
     #如果-112 28 160放置了粘液块，显示粒子效果并解锁高台
     execute if block -112 28 160 slime [] run fill -114 27 159 -112 28 161 air [] destroy
-    execute if block -114 27 159 minecraft:air [] run clone -107 10 161   -111 11 157   -115 27 158
+    execute if block -114 27 159 minecraft:air [] run clone -107 10 161   -111 12 157   -115 27 158
