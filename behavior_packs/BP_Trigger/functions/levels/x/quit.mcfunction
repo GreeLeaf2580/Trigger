@@ -10,9 +10,6 @@ execute positioned -40 33 255 run kill @e[type=!player,r=40]
 #将被该关卡选中的玩家传送回选关
 tp @s[scores={class=7,grade=1}] -12 21 0 90 0
 
-#更改重生点为大厅
-spawnpoint @s[scores={class=7,grade=1}] 0 21 0
-
 #不在x里不允许掉落
 gamerule doentitydrops false
 

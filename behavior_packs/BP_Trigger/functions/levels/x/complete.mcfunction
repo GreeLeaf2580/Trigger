@@ -17,9 +17,6 @@ execute positioned 0 20 23 run kill @e[type=chicken,r=5]
 #将被该关卡选中的玩家传送回选关
 tp @a[scores={class=7,grade=1}] -12 21 0 90 0
 
-#更改重生点为大厅
-spawnpoint @a[scores={class=7,grade=1}] 0 21 0
-
 #清除药水效果
 effect @a[scores={class=7,grade=1}] clear
 
