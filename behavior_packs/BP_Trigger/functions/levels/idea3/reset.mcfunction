@@ -23,3 +23,6 @@ tp @a[scores={class=9,grade=3}] -116 22 148 facing -100 22 164
 #关卡结构重置 /structure save IDEA3 -118 34 146   -100 20 165 disk
 #关卡地形覆盖
 structure load IDEA3 -118 20 146 0_degrees none false true false
+
+#重置计分项
+scoreboard players set Idea3CanPlace data 0

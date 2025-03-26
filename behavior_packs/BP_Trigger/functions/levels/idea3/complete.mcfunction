@@ -27,6 +27,8 @@ effect @a[scores={class=9,grade=3}] clear
     #修改等级为0大厅
     execute as @a[scores={class=0,grade=3}] at @s run scoreboard players set @s grade 0
 
+    scoreboard players set Idea3CanPlace data 0
+
 #开启接下来的关卡，修改大厅关卡显示
     #首次通过显示粒子效果
     execute if block 17 23 7 concrete_powder ["color"="yellow"] run fill 17 22 6   17 25 7 air [] destroy

@@ -31,8 +31,9 @@ gamerule doentitydrops false
     execute as @a[scores={class=0,grade=1}] at @s run scoreboard players set @s grade 0
 
 #开启接下来的关卡，修改大厅关卡显示
-    #显示该关卡已通关
-    clone 33 15 22 32 18 22 -26 22 0 replace force
 
     #显示通过该类型
-    execute if block -26 22 0 concrete ["color"="yellow"] run function levels/x/cheer
+    execute unless block -26 22 0 stained_hardened_clay ["color"="lime"] run function levels/x/cheer
+
+    #显示该关卡已通关
+    clone 33 15 22 32 18 22 -26 22 0 replace force

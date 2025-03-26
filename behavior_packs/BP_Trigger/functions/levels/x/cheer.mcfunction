@@ -1,4 +1,4 @@
-#播放0.5*升级的音效
+#播放挑战进度完成的音效
     #播放延迟时间
     scoreboard players set soundPlayer time 5
 

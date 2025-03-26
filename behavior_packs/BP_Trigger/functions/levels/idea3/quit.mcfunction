@@ -20,3 +20,5 @@ effect @a[scores={class=9,grade=3}] clear
 
     #修改等级为0大厅
     execute as @s[scores={class=0,grade=3}] at @s run scoreboard players set @s grade 0
+
+    scoreboard players set Idea3CanPlace data 0
