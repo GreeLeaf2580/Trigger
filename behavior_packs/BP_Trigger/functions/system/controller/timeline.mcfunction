@@ -15,6 +15,9 @@ execute as @a[scores={class=0,grade=0}]  at @s if entity @a[rm=1,scores={class=0
 execute as @a[scores={class=0,grade=0}]  at @s if entity @a[rm=1,scores={class=0,grade=0}] run replaceitem entity @s slot.armor.feet 0 air
 
 execute if entity @a[scores={class=0,grade=0}] run function levels/hall/timeline
+execute if entity @a[scores={class=0,grade=-1}] run function levels/hall/credits/timeline
+
+execute if entity @a[scores={class=0,grade=-2}] run function levels/hall/guide/timeline
 
 execute if entity @a[scores={class=1,grade=1}] run function levels/a1/timeline
 execute if entity @a[scores={class=1,grade=2}] run function levels/a2/timeline

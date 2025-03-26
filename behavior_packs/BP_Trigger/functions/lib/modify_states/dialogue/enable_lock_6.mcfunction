@@ -15,9 +15,11 @@ scoreboard players set dialogue active 6
 scoreboard players set dialogue time 0
 
 # --- 禁止玩家的移动 ---
-inputpermission set @a camera disabled
-inputpermission set @a movement disabled
+inputpermission set @a[scores={grade=..-1}] camera disabled
+inputpermission set @a[scores={grade=..-1}] movement disabled
 
 # --- 多人下，将玩家改为隐身 ---
 # 防止玩家模型重叠
-execute if score playerAmount data matches 2.. run effect @a invisibility 3600 0 true
+effect @a[scores={grade=..-1}] invisibility 3600 0 true
+
+# ===== 剧情线 =====

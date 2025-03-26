@@ -188,3 +188,14 @@
 
     #如果是表示通过的绿色混凝土粉末，则替换为木头按钮和绿色混凝土粉末
     execute if blocks 40 19 25  40 19 25   17 23 6 all unless entity @a[scores={class=9,grade=3}] if block 17 23  7 concrete_powder ["color"="green"] run clone 34 15 39   34 18 40   17 22 6  replace force
+
+
+
+
+
+#如果关于里被占用（1 22 6为40 19 25的禁止进入），且关于和引导里没有人，则解除占用
+    execute if blocks 40 19 25  40 19 25   1 22 6 all unless entity @a[scores={class=0,grade=..-1}] if block 1 22 7 quartz_block ["chisel_type"="lines","pillar_axis"="z"] run setblock 1 22 6 stone_button ["button_pressed_bit"=false,"facing_direction"=2]
+
+#如果引导里被占用（-1 22 6为40 19 25的禁止进入），且关于和引导里没有人，则解除占用
+    execute if blocks 40 19 25  40 19 25   -1 22 6 all unless entity @a[scores={class=0,grade=..-1}] if block -1 22 7 quartz_block ["chisel_type"="lines","pillar_axis"="z"] run setblock -1 22 6 stone_button ["button_pressed_bit"=false,"facing_direction"=2]
+    
