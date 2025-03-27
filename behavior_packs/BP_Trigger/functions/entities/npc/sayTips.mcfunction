@@ -10,5 +10,6 @@ execute if score SaySeed data matches 2 run tellraw @s {"rawtext": [{"text":"<Gr
 execute if score SaySeed data matches 3 run tellraw @s {"rawtext": [{"text":"<GreeLeaf> qwq 突然想起来信物[木斧]被我忘在某个洞穴深处"}]}
 execute if score SaySeed data matches 4 run tellraw @s {"rawtext": [{"text":"<GreeLeaf> awa 隐藏关好像都和小麦种子有关"}]}
 execute if score SaySeed data matches 5 run tellraw @s {"rawtext": [{"text":"<GreeLeaf> 碰触大厅里的水可以切换旁观模式"}]}
-execute if score SaySeed data matches 6..10 run tellraw @s {"rawtext": [{"text":"<GreeLeaf> 你好呀~"}]}
+execute if score SaySeed data matches 6 run tellraw @s {"rawtext": [{"text":"<GreeLeaf> 注意！如果不第一时间把信物交给我，则需要重新获取"}]}
+execute if score SaySeed data matches 7..10 run tellraw @s {"rawtext": [{"text":"<GreeLeaf> 你好呀~"}]}
 execute if score SaySeed data matches 11..15 run tellraw @s {"rawtext": [{"text":"<GreeLeaf> awa"}]}

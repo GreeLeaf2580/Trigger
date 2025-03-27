@@ -20,7 +20,7 @@ execute positioned 17 23 6 as @p[scores={class=9,grade=3}] at @s run clear @s
 tp @a[scores={class=9,grade=3}] -116 22 148 facing -100 22 164
 
 #将被该关卡选中的玩家显示标题
-title @a[scores={class=9,grade=3}] title 压力板的压力
+titleraw @a[scores={class=9,grade=3}] title { "rawtext": [{ "translate": "title.idea3.name" }] }
 
 #将被该关卡选中的玩家显示副标题
 title @a[scores={class=9,grade=3}] subtitle -IDEA 3-

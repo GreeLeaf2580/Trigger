@@ -20,7 +20,7 @@ execute positioned -21 22 6 as @p[scores={class=3,grade=1}] at @s run clear @s
 tp @a[scores={class=3,grade=1}] 0 21 89 facing 5 21 84
 
 #将被该关卡选中的玩家显示标题
-title @a[scores={class=3,grade=1}] title 连接
+titleraw @a[scores={class=3,grade=1}] title { "rawtext": [{ "translate": "title.c1.name" }] }
 
 #将被该关卡选中的玩家显示副标题
 title @a[scores={class=3,grade=1}] subtitle -C1-

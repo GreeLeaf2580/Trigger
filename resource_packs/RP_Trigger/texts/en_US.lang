@@ -47,3 +47,31 @@ tile.frame.name=Item Frame
 item.spawn_egg.entity.trigger:npc_author.name=NPC Spawn Egg
 
 action.interact.chat=Chat
+
+## Levels' name
+title.a1.name=Help
+title.a2.name=The Parrots and the Bats
+title.a3.name=Grow
+title.b1.name=Push & Pull
+title.b2.name=Order
+title.b3.name=PathShaper
+title.c1.name=Connect
+title.c2.name=Fast or Slow
+title.c3.name=Under Oasis
+title.d1.name=Turn
+title.d2.name=Cruise
+title.d3.name=Quote
+title.e1.name=Island
+title.e2.name=Explorer Map
+title.e3.name=Riptide
+title.f1.name=Snow
+title.f2.name=Hide & Seek
+title.f3.name=Icebreaker
+title.x.name=Trigger
+title.hide1.name=Take Aim
+title.hide2.name=RipplingWheat
+title.idea1.name=Road of Parkour
+title.idea2.name=The Lost Garden
+title.idea3.name=PressurePlate's Pressure
+
+title.x.actionbar=Closely interconnected. Don't kick down the ladder.

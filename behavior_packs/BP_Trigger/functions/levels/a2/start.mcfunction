@@ -20,7 +20,7 @@ execute positioned -17 23 6 as @p[scores={class=1,grade=2}] at @s run clear @s
 tp @a[scores={class=1,grade=2}] -25 21 23 facing -19 21 29 true
 
 #将被该关卡选中的玩家显示标题
-title @a[scores={class=1,grade=2}] title 鸡兔同笼
+titleraw @a[scores={class=1,grade=2}] title { "rawtext": [{ "translate": "title.a2.name" }] }
 
 #将被该关卡选中的玩家显示副标题
 title @a[scores={class=1,grade=2}] subtitle -A2-

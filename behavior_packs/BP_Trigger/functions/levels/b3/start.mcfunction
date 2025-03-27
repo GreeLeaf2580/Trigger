@@ -20,7 +20,7 @@ execute positioned -19 24 6 as @p[scores={class=2,grade=3}] at @s run clear @s
 tp @a[scores={class=2,grade=3}] -54 27 56 facing -48 21 46
 
 #将被该关卡选中的玩家显示标题
-title @a[scores={class=2,grade=3}] title 塑路者
+titleraw @a[scores={class=2,grade=3}] title { "rawtext": [{ "translate": "title.b3.name" }] }
 
 #将被该关卡选中的玩家显示副标题
 title @a[scores={class=2,grade=3}] subtitle -B3-

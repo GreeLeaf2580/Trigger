@@ -19,7 +19,7 @@ execute positioned -19 23 -6 as @p[scores={class=6,grade=2}] at @s run clear @s
 #将被该关卡选中的玩家传送至选关
 tp @a[scores={class=6,grade=2}] -25 21 188 facing -19 22 194
 #将被该关卡选中的玩家显示标题
-title @a[scores={class=6,grade=2}] title 秋收冬藏
+titleraw @a[scores={class=6,grade=2}] title { "rawtext": [{ "translate": "title.f2.name" }] }
 
 #将被该关卡选中的玩家显示副标题
 title @a[scores={class=6,grade=2}] subtitle -F2-

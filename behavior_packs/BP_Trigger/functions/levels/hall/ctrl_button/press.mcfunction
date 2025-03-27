@@ -459,3 +459,18 @@
         
         #在大厅的玩家按下-1 22 6的石质按钮，替换这个按钮为禁止进入
         execute if block -1 22 6 stone_button ["button_pressed_bit"=true,"facing_direction"=2] run clone 40 19 25  40 19 25   -1 22 6
+
+
+# -重置-
+    #按下
+
+        #在大厅的玩家按下25 22 0的金合欢木按钮，运行“警告重置函数”
+        execute if block 25 22 0 acacia_button ["button_pressed_bit"=true,"facing_direction"=4] run function levels/hall/restart/notice
+
+        #在大厅的玩家按下25 22 0的红树按钮，运行“重置函数”
+        execute if block 25 22 0 mangrove_button ["button_pressed_bit"=true,"facing_direction"=4] run function levels/hall/restart/init_levels
+
+    #修改按钮状态，以防止按钮保持按下的状态而重复执行命令
+
+        #在大厅的玩家按下25 22 0的金合欢木按钮，替换关于按钮为红树按钮
+        execute if block 25 22 0 acacia_button ["button_pressed_bit"=true,"facing_direction"=4] run setblock 25 22 0 minecraft:mangrove_button ["button_pressed_bit"=false,"facing_direction"=4]

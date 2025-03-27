@@ -46,3 +46,30 @@ item.trigger:reset.name=§a重置关卡
 tile.frame.name=物品展示框
 item.spawn_egg.entity.template:npc.name=作者 NPC 刷怪蛋
 action.interact.chat=聊天
+
+
+## 关卡标题
+title.a1.name=互助
+title.a2.name=鸡兔同笼
+title.a3.name=我从哪儿来？
+title.b1.name=推拉
+title.b2.name=顺序
+title.b3.name=塑路者
+title.c1.name=连接
+title.c2.name=快或慢
+title.c3.name=绿洲之下
+title.d1.name=转向
+title.d2.name=巡航
+title.d3.name=引用
+title.e1.name=海岛
+title.e2.name=藏宝图
+title.e3.name=激流勇进
+title.f1.name=初雪
+title.f2.name=秋收冬藏
+title.f3.name=疏浚
+title.x.name=触发
+title.hide1.name=草木皆兵
+title.hide2.name=风吹麦浪
+title.idea1.name=跑酷之路
+title.idea2.name=失落的花园
+title.idea3.name=压力板的压力

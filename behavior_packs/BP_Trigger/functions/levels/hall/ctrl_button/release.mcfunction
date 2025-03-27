@@ -198,4 +198,7 @@
 
 #如果引导里被占用（-1 22 6为40 19 25的禁止进入），且关于和引导里没有人，则解除占用
     execute if blocks 40 19 25  40 19 25   -1 22 6 all unless entity @a[scores={class=0,grade=..-1}] if block -1 22 7 quartz_block ["chisel_type"="lines","pillar_axis"="z"] run setblock -1 22 6 stone_button ["button_pressed_bit"=false,"facing_direction"=2]
+
+#如果重置按钮3秒内没被按下，则恢复原样
+    execute if block 25 22 0 mangrove_button ["button_pressed_bit"=false,"facing_direction"=4] if score timeline active matches 2 if score timeline time matches 21.. run function levels/hall/restart/recover
     

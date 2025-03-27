@@ -13,3 +13,8 @@ clone 34 15 31 38 18 32 17 22 6
 
 #重置a1的讲台
 clone 5 7 20   5 7 20   -2 26 28
+
+#让所有人退出当前正在玩的关卡
+execute as @a[scores={class=!0,grade=!0}] at @s run function entities/player/using_quit_level
+
+function lib/modify_states/timeline/disable

@@ -20,7 +20,7 @@ execute positioned 19 23 6 as @p[scores={class=9,grade=2}] at @s run clear @s
 tp @a[scores={class=9,grade=2}] -116 21 115 facing -100 21 131
 
 #将被该关卡选中的玩家显示标题
-title @a[scores={class=9,grade=2}] title 失落的花园
+titleraw @a[scores={class=9,grade=2}] title { "rawtext": [{ "translate": "title.idea2.name" }] }
 
 #将被该关卡选中的玩家显示副标题
 title @a[scores={class=9,grade=2}] subtitle -IDEA 2-

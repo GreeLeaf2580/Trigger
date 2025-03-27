@@ -10,6 +10,6 @@
 # --- 禁用时间线 ---
 
 ## 禁用时间线状态
-scoreboard players set timeline active 0
+scoreboard players set timeline active 1
 ## 将时间线归零
 scoreboard players set timeline time 0

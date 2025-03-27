@@ -19,7 +19,7 @@ execute positioned -17 24 6 as @p[scores={class=1,grade=3}] at @s run clear @s
 tp @a[scores={class=1,grade=3}] -53 21 24 facing -64 21 33 true
 
 #将被该关卡选中的玩家显示标题
-title @a[scores={class=1,grade=3}] title 我从哪里来
+titleraw @a[scores={class=1,grade=3}] title { "rawtext": [{ "translate": "title.a3.name" }] }
 
 #将被该关卡选中的玩家显示副标题
 title @a[scores={class=1,grade=3}] subtitle -A3-
