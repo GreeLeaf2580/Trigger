@@ -11,8 +11,11 @@ tellraw @a {"rawtext": [{"text":"[X]已通过！"}]}
 #清除被该关卡选中的玩家的物品
 clear @a[scores={class=7,grade=1}]
 
-#清除该关卡内的生物
-execute positioned 0 20 23 run kill @e[type=chicken,r=5]
+#清除所有除玩家外的实体
+execute positioned -40 33 255 run kill @e[type=!player,r=40]
+
+#清除掉落物
+execute positioned -40 33 255 run kill @e[type=item,r=40]
 
 #将被该关卡选中的玩家传送回选关
 tp @a[scores={class=7,grade=1}] -12 21 0 90 0
