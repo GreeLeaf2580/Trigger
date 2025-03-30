@@ -1,5 +1,5 @@
 #被该关卡选中的玩家显示提示信息
-tellraw @s[scores={class=4,grade=2}] {"rawtext": [{"text":"[D2]已退出"}]}
+tellraw @s[scores={class=4,grade=2}] {"rawtext": [{"text":"[D2]"},{ "translate": "tellraw.quit"}]}
 
 #关卡地形覆盖
 clone -31 10 128   -19 9 116   -31 21 116 replace force

@@ -1,5 +1,5 @@
 #被该关卡选中的玩家显示提示信息
-tellraw @a[scores={class=2,grade=3}] {"rawtext": [{"text":"[B3]已重置关卡"}]}
+tellraw @a[scores={class=2,grade=3}] {"rawtext": [{"text":"[B3]"},{ "translate": "tellraw.reset" }]}
 
 #清除被该关卡选中的玩家背包
 clear @a[scores={class=2,grade=3}]
@@ -20,7 +20,7 @@ structure load B3 -65 19 45 0_degrees none false true false
 
 #如果17 24 7为灰色混凝土粉末，即idea3未解锁，重置解锁idea3的区域
     #重置熔炉
-    execute if block 17 24 7 concrete_powder ["color"="gray"] run clone -62 13 65   -62 13 65   -53 20 61
+    execute if score Idea3ItemGot data matches 0 run clone -62 13 65   -62 13 65   -53 20 61
 
-    #重置开启idea3的计分项
-    scoreboard players set Idea3ItemGot data 0
+    #未通过本关，提示通关后可获得信物
+    execute if score Idea3ItemGot data matches 1 run function levels/idea3/notice

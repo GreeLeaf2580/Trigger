@@ -1,5 +1,5 @@
 #被该关卡选中的玩家显示提示信息
-tellraw @s[scores={class=8,grade=1}] {"rawtext": [{"text":"[HIDE 1]已退出"}]}
+tellraw @s[scores={class=8,grade=1}] {"rawtext": [{"text":"[HIDE 1]"},{ "translate": "tellraw.quit"}]}
 
 #清除所有除玩家外的实体
 execute positioned -109 21 24 run kill @e[type=!player,r=16]

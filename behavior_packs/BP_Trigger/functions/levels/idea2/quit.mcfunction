@@ -1,5 +1,5 @@
 #被该关卡选中的玩家显示提示信息
-tellraw @s[scores={class=9,grade=2}] {"rawtext": [{"text":"[IDEA 2]已退出"}]}
+tellraw @s[scores={class=9,grade=2}] {"rawtext": [{"text":"[IDEA 2]"},{ "translate": "tellraw.quit"}]}
 
 #将被该关卡选中的玩家传送回成就界面
 tp @a[scores={class=9,grade=2}] 19 21 4 facing 19 21 6

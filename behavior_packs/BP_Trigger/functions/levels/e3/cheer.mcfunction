@@ -7,6 +7,6 @@ setblock -19 25 -7 stained_hardened_clay ["color"="lime"] destroy
     #播放选定的音效
     scoreboard players set soundPlayer active 16
 
-tellraw @a {"rawtext": [{"text":"[E类型]已通过！"}]}
-title @a title E类型
-title @a subtitle -已通过-
+tellraw @a {"rawtext": [{"text":"[E"},{ "translate": "tellraw.class" },{ "translate": "tellraw.complete"}]}
+titleraw @a title { "rawtext": [{ "text": "E" },{ "translate": "title.class.cheer.name" }] }
+titleraw @a subtitle { "rawtext": [{ "translate": "title.class.cheer.subtitle" }] }

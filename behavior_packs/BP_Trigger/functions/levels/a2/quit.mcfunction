@@ -1,5 +1,5 @@
 #被该关卡选中的玩家显示提示信息
-tellraw @a[scores={class=1,grade=2}] {"rawtext": [{"text":"[A2]已退出"}]}
+tellraw @a[scores={class=1,grade=2}] {"rawtext": [{"text":"[A2]"},{ "translate": "tellraw.quit"}]}
 
 #清除被该关卡选中的玩家背包
 clear @a[scores={class=1,grade=2}]

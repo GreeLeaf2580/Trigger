@@ -2,7 +2,7 @@
 setblock -66 35 254 minecraft:wheat ["growth"=7]
 
 #显示解锁提示信息
-tellraw @a {"rawtext": [{"text":"[X]已解锁隐藏关②[风吹麦浪]"}]}
+tellraw @a {"rawtext": [{"text":"[X]"},{ "translate": "tellraw.hide2.unlock" }]}
 
 #开启该关卡
 clone 35 15 35   35 18 36   18 22 6

@@ -18,8 +18,22 @@ clone 34 15 31 38 18 32 17 22 6
 #重置a1的讲台
 clone 5 7 20   5 7 20   -2 26 28
 
+#重置开启idea1的计分项
+scoreboard players set Idea1ItemGot data 0
+
+#重置开启idea2的计分项
+scoreboard players set Idea2ItemGot data 0
+
+#重置开启idea3的计分项
+scoreboard players set Idea3ItemGot data 0
+
+clear @a
+effect @a clear
+spawnpoint @a 0 21 0
+setworldspawn 0 21 0
+
 playsound random.anvil_break @a
-tellraw @a {"rawtext": [{"text":"§4[!警告!]已重置所有进度"}]}
+tellraw @a {"rawtext": [{"translate":"tellraw.restart.init_levels"}]}
 setblock 25 22 0 acacia_button ["button_pressed_bit"=false,"facing_direction"=4]
 
 function lib/modify_states/timeline/disable

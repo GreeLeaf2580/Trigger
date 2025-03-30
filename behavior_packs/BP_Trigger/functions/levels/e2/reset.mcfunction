@@ -1,5 +1,5 @@
 #被该关卡选中的玩家显示提示信息
-tellraw @a[scores={class=5,grade=2}] {"rawtext": [{"text":"[E2]已重置关卡"}]}
+tellraw @a[scores={class=5,grade=2}] {"rawtext": [{"text":"[E2]"},{ "translate": "tellraw.reset" }]}
 
 #清除被该关卡选中的玩家背包
 clear @a[scores={class=5,grade=2}]
@@ -27,4 +27,7 @@ execute positioned -25 23 155 run kill @e[type=!player,r=9]
 #关卡结构重置 /structure save E2 -31 28 149   -19 14 161 disk
 #关卡地形覆盖，含三个箱子、两个活板门、一些鱼
 structure load E2 -31 14 149 0_degrees none true true true
+
+#重置计分项
+scoreboard players set E2CanPlace data 0
 

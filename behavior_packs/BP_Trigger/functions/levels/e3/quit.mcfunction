@@ -1,5 +1,5 @@
 #被该关卡选中的玩家显示提示信息
-tellraw @s[scores={class=5,grade=3}] {"rawtext": [{"text":"[E3]已退出"}]}
+tellraw @s[scores={class=5,grade=3}] {"rawtext": [{"text":"[E3]"},{ "translate": "tellraw.quit"}]}
 
 #关卡结构重置 /structure save E3 -44 28 145   -64 9 165 disk
 #关卡地形覆盖，含三个箱子、一个木桶、一些鱼

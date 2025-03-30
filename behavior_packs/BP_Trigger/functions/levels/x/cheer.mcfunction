@@ -5,8 +5,9 @@
     #播放选定的音效
     scoreboard players set soundPlayer active 17
 
-tellraw @a {"rawtext": [{"text":"[X]已通过！"}]}
-title @a title 恭喜通关主线关卡！！！
+tellraw @a {"rawtext": [{"text":"[X]"},{ "translate": "tellraw.complete"}]}
+titleraw @a title { "rawtext": [{ "translate": "title.class.cheer.mainline" }] }
+titleraw @a subtitle { "rawtext": [{ "translate": "subtitle.class.cheer.mainline" }] }
 
 #在所有玩家脚下生成烟花
 execute as @a run summon minecraft:fireworks_rocket ~~~

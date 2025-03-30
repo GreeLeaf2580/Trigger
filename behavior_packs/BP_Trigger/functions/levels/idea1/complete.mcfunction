@@ -1,5 +1,5 @@
 #所有玩家显示提示信息
-tellraw @a {"rawtext": [{"text":"[IDEA 1]已通过！"}]}
+tellraw @a {"rawtext": [{"text":"[IDEA 1]"},{ "translate": "tellraw.complete"}]}
 
 #播放通关的音效
     #播放延迟时间

@@ -1,5 +1,5 @@
 #检测关卡的通关条件
-execute positioned -74 35 254 if entity @a[scores={class=7,grade=1},r=1] run function levels/x/complete
+execute if entity @a[scores={class=7,grade=1},x=-74,y=35,z=253,dx=0,dy=5,dz=3] run function levels/x/complete
 
 #检测解锁hide2的通关条件
 execute if block -66 35 254 minecraft:wheat ["growth"=0] if block 18 22 7 quartz_block ["chisel_type"="lines","pillar_axis"="y"] run function levels/hide2/unlock

@@ -1,5 +1,5 @@
 #被该关卡选中的玩家显示提示信息
-tellraw @a[scores={class=7,grade=1}] {"rawtext": [{"text":"[X]已重置关卡"}]}
+tellraw @a[scores={class=7,grade=1}] {"rawtext": [{"text":"[X]"},{ "translate": "tellraw.reset" }]}
 
 #清除被该关卡选中的玩家背包
 clear @a[scores={class=7,grade=1}]
@@ -22,13 +22,13 @@ execute positioned -40 33 255 run kill @e[type=!player,r=40]
 tp @a[scores={class=7,grade=1}] 1 21 254 facing 5 21 254
 
 #将被该关卡选中的玩家显示标题
-title @a[scores={class=7,grade=1}] title 触发
+titleraw @a[scores={class=7,grade=1}] title { "rawtext": [{ "translate": "title.x.name" }] }
 
 #将被该关卡选中的玩家显示副标题
 title @a[scores={class=7,grade=1}] subtitle -X-
 
 #将被该关卡选中的玩家显示活动栏
-title @a[scores={class=7,grade=1}] actionbar 环环相扣，当心过河拆桥
+titleraw @a[scores={class=7,grade=1}] actionbar { "rawtext": [{ "translate": "title.x.actionbar" }] }
 
 #Can_Place_On物品计分项清空
 scoreboard players set XCanPlace.slime data 0

@@ -1,5 +1,5 @@
 #被该关卡选中的玩家显示提示信息
-tellraw @s[scores={class=6,grade=3}] {"rawtext": [{"text":"[F3]已退出"}]}
+tellraw @s[scores={class=6,grade=3}] {"rawtext": [{"text":"[F3]"},{ "translate": "tellraw.quit"}]}
 
 #清除掉落物
 execute positioned -54 21 188 run kill @e[type=item,r=16]

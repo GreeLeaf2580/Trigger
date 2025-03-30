@@ -1,5 +1,5 @@
 #被该关卡选中的玩家显示提示信息
-tellraw @s[scores={class=1,grade=1}] {"rawtext": [{"text":"[A1]已退出"}]}
+tellraw @s[scores={class=1,grade=1}] {"rawtext": [{"text":"[A1]"},{ "translate": "tellraw.quit" }]}
 
 
 #清除该关卡内的生物

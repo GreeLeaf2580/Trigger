@@ -1,5 +1,5 @@
 #被该关卡选中的玩家显示提示信息
-tellraw @s[scores={class=5,grade=1}] {"rawtext": [{"text":"[E1]已退出"}]}
+tellraw @s[scores={class=5,grade=1}] {"rawtext": [{"text":"[E1]"},{ "translate": "tellraw.quit"}]}
 
 #重置箱子
 replaceitem block -5 21 151 slot.container 0 slime_ball 1 0

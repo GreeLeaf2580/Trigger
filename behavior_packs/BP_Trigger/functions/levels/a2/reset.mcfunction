@@ -1,8 +1,14 @@
 #被该关卡选中的玩家显示提示信息
-tellraw @a[scores={class=1,grade=2}] {"rawtext": [{"text":"[A2]已重置关卡"}]}
+tellraw @a[scores={class=1,grade=2}] {"rawtext": [{"text":"[A2]"},{ "translate": "tellraw.reset" }]}
 
 #清除被该关卡选中的玩家背包
 clear @a[scores={class=1,grade=2}]
+
+#将被该关卡选中的玩家显示标题
+titleraw @a[scores={class=1,grade=2}] title { "rawtext": [{ "translate": "title.a2.name" }] }
+
+#将被该关卡选中的玩家显示副标题
+title @a[scores={class=1,grade=2}] subtitle -A2-
 
 #给予被选中玩家物品
     #给予“重置关卡”
@@ -30,7 +36,6 @@ summon minecraft:rabbit -29 19 27 0 0 grow_up
 
 #如果21 22 7为灰色混凝土粉末，即idea1未解锁，重置解锁idea1的区域
     #重置胡萝卜田
-    execute if block 21 22 7 concrete_powder ["color"="gray"] run clone -22 9 23   -22 10 23   -29 21 17
-
-    #重置开启idea1的计分项
-    scoreboard players set Idea1ItemGot data 0
+    execute if score Idea1ItemGot data matches 0 run clone -22 9 23   -22 10 23   -29 21 17
+    #未通过本关，提示通关后可获得信物
+    execute if score Idea1ItemGot data matches 1 run function levels/idea1/notice

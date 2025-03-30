@@ -1,8 +1,14 @@
 #被该关卡选中的玩家显示提示信息
-tellraw @a[scores={class=1,grade=1}] {"rawtext": [{"text":"[A1]已重置关卡"}]}
+tellraw @a[scores={class=1,grade=1}] {"rawtext": [{"text":"[A1]"},{ "translate": "tellraw.reset" }]}
 
 #清除被该关卡选中的玩家背包
 clear @a[scores={class=1,grade=1}]
+
+#将被该关卡选中的玩家显示标题
+titleraw @a[scores={class=1,grade=1}] title  { "rawtext": [{ "translate": "title.a1.name" }] }
+
+#将被该关卡选中的玩家显示副标题
+title @a[scores={class=1,grade=1}] subtitle -A1-
 
 #给予被选中玩家物品
     #给予“重置关卡”

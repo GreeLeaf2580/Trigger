@@ -1,5 +1,5 @@
 #被该关卡选中的玩家显示提示信息
-tellraw @s[scores={class=3,grade=3}] {"rawtext": [{"text":"[C3]已退出"}]}
+tellraw @s[scores={class=3,grade=3}] {"rawtext": [{"text":"[C3]"},{ "translate": "tellraw.quit"}]}
 
 #关卡结构重置 /structure save C3 -64 19 79 -44 28 99 disk
 #关卡地形覆盖

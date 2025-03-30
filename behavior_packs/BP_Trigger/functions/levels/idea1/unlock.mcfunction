@@ -17,7 +17,7 @@ clone 38 15 35 38 18 36 21 22 6
 execute positioned as @e[type=trigger:npc_author] run clear @p minecraft:carrot -1
 
 #作者对话
-tellraw @a {"rawtext": [{"text":"<GreeLeaf> 感谢你找到了丢失的信物，这就为你开启奖励关"}]}
+tellraw @a {"rawtext": [{ "translate": "tellraw.npc_author.idea.open" }]}
 
 #显示解锁提示信息
-tellraw @a {"rawtext": [{"text":"[IDEA 1]已解锁奖励关①[跑酷之路]"}]}
+tellraw @a {"rawtext": [{ "translate": "tellraw.idea1.unlock" }]}

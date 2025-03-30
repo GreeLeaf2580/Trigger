@@ -73,3 +73,107 @@ title.hide2.name=风吹麦浪
 title.idea1.name=跑酷之路
 title.idea2.name=失落的花园
 title.idea3.name=压力板的压力
+
+title.x.actionbar=环环相扣，当心过河拆桥
+
+
+title.class.cheer.name=类型
+title.class.cheer.subtitle=-已通过-
+
+title.class.cheer.mainline=主线关卡
+subtitle.class.cheer.mainline=恭喜通关！！！
+
+## 关卡操作
+tellraw.reset= 已重置关卡
+tellraw.quit= 已退出
+tellraw.complete= 已完成！
+tellraw.class=类型]
+
+## 奖励关和隐藏关相关
+tellraw.idea1.notice=通过本关后将获得信物[胡萝卜]
+tellraw.idea2.notice=通过本关后将获得信物[金锭]
+tellraw.idea3.notice=通过本关后将获得信物[木斧]
+
+tellraw.idea1.itemGot=获得纪念品[胡萝卜]，请开启奖励关①后再游玩关卡
+tellraw.idea2.itemGot=获得纪念品[金锭]，请开启奖励关②后再游玩关卡
+tellraw.idea3.itemGot=获得纪念品[木斧]，请开启奖励关③后再游玩关卡
+
+tellraw.hide1.unlock=已解锁隐藏关①[草木皆兵]
+tellraw.hide2.unlock=已解锁隐藏关②[风吹麦浪]
+tellraw.idea1.unlock=[IDEA 1]已解锁奖励关①[跑酷之路]
+tellraw.idea2.unlock=[IDEA 2]已解锁奖励关②[失落的花园]
+tellraw.idea3.unlock=[IDEA 3]已解锁奖励关③[压力板的压力]
+
+## 大厅对话
+## NPC
+tellraw.npc_author.sayTips0=<GreeLeaf> 你好呀~获得信物可以交给我哦~
+tellraw.npc_author.sayTips1=<GreeLeaf> 你好~我隐约记得信物[胡萝卜]在有兔子的地方
+tellraw.npc_author.sayTips2=<GreeLeaf> 据说信物[金锭]在色彩斑斓的地方
+tellraw.npc_author.sayTips3=<GreeLeaf> qwq 突然想起来信物[木斧]被我忘在某个洞穴深处
+tellraw.npc_author.sayTips4=<GreeLeaf> awa 隐藏关好像都和小麦种子有关
+tellraw.npc_author.sayTips5=<GreeLeaf> 碰触大厅里的水可以切换旁观模式
+tellraw.npc_author.sayTips6=<GreeLeaf> 完成难度1即可开启难度2和下一类型
+tellraw.npc_author.sayTips7=<GreeLeaf> 查看“关于”以获取作者信息
+tellraw.npc_author.sayTips8=<GreeLeaf> 查看“引导”以获取本图信息
+tellraw.npc_author.sayTips9=<GreeLeaf> 点击“重置”按钮可重置游戏进度
+tellraw.npc_author.sayTips10=<GreeLeaf> 阅读“选项”的《关卡类型介绍》可获取每类玩法说明
+tellraw.npc_author.sayTips11=<GreeLeaf> 你好呀~
+tellraw.npc_author.sayTips16=<GreeLeaf> awa
+
+tellraw.npc_author.idea.open=<GreeLeaf> 感谢你找到了丢失的信物，这就为你开启奖励关
+
+## 关于
+title.credits.1=二字十部曲系列
+subtitle.credits.1=本图属于...
+title.credits.2=风吹麦浪
+subtitle.credits.2=本图为了纪念 跑酷&小游戏作者 而做
+title.credits.3=o绿叶o
+subtitle.credits.3=本图作者
+
+subtitle.credits.4=本图测试
+
+subtitle.credits.5=感谢提供命令、建造、贴图等技术支持
+title.credits.6=极筑工坊
+subtitle.credits.6=感谢帮助
+title.credits.7=您
+subtitle.credits.7=感谢您的下载和游玩
+
+tellraw.credits.1=[关于]
+tellraw.credits.2=本图属于[二字十部曲]系列
+tellraw.credits.3=本图为了纪念跑酷&小游戏作者[风吹麦浪]而做
+tellraw.credits.4=本图作者 o绿叶o
+tellraw.credits.5=本图测试 一只卑微的量筒、大只毛茸茸的鸽子、狂野巴豆、小飞侠、lanos212、Ender5207541、Echeng、幻光溢彩、墨痕、ProjectXero
+tellraw.credits.6=技术支持 一只卑微的量筒、ProjectXero、6g3y、野鲤、土豆泥92
+tellraw.credits.7=非常感谢您的下载和游玩
+tellraw.credits.8=另外，如果您是实况主的话，感谢您的录制
+
+
+##引导
+tellraw.guide.1=[引导]
+tellraw.guide.2=在关卡内使用§a重置关卡§f和§b退出关卡§f，均会产生相应效果
+tellraw.guide.3=上方为三个§e信物，§f与作者对话解锁奖励关
+tellraw.guide.4=现在，您可以看见所有关卡，共24关
+tellraw.guide.5=其中，§a黄绿色标识§f的为主线关卡，共7关
+tellraw.guide.6=§2绿色标识§f的为支线关卡，共12关
+tellraw.guide.7=主线和支线关卡可分为§a6种类型，用大写字母A-F、X标出
+tellraw.guide.8=每种类型按难度分为1-3
+tellraw.guide.9=请注意，§e§l完成难度1即可解锁下一类型
+tellraw.guide.10=如完成a1即可解锁b1和a2
+tellraw.guide.11=完成a2只能解锁下一难度的a3
+tellraw.guide.12=X较难，为最终主线关，是A-F类型的综合
+tellraw.guide.13=较难的关卡会在场景里给出物品展示框的提示
+tellraw.guide.14=§e黄色标识§f的为奖励关，共3个
+tellraw.guide.15=§7灰色标识§f的为隐藏关，共2个
+tellraw.guide.16=在关卡内找到信物并通关才能得到信物
+tellraw.guide.17=把信物交给作者来解锁奖励关
+tellraw.guide.18=开启隐藏关则无需信物
+tellraw.guide.19=§6所有关卡解锁后均可反复游玩
+tellraw.guide.20=§6本图完全支持多人游戏，期待一起合作通关
+tellraw.guide.21=§e最后感谢您的下载和体验，祝您游玩愉快
+
+##重置进度
+tellraw.restart.notice=§4[!警告!]如果确定重置进度，请1秒内再按一次
+tellraw.restart.recover=§4[!警告!]§f重置按钮已恢复
+tellraw.restart.init_levels=§4[!警告!]已重置所有进度
+
+

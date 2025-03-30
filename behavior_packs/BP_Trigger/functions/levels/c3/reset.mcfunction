@@ -1,5 +1,5 @@
 #被该关卡选中的玩家显示提示信息
-tellraw @a[scores={class=3,grade=3}] {"rawtext": [{"text":"[C3]已重置关卡"}]}
+tellraw @a[scores={class=3,grade=3}] {"rawtext": [{"text":"[C3]"},{ "translate": "tellraw.reset" }]}
 
 #清除被该关卡选中的玩家背包
 clear @a[scores={class=3,grade=3}]
@@ -17,7 +17,6 @@ structure load C3 -64 19 79 0_degrees none false true false
 
 #如果19 22 7为青色陶瓦，即idea2未解锁，重置解锁idea2的区域
     #重置木桶
-    execute unless block 19 22 7 stained_hardened_clay ["color"="cyan"] run clone -54 10 87   -54 10 87   -50 19 92
-
-    #重置开启idea2的计分项
-    scoreboard players set Idea2ItemGot data 0
+    execute unless score Idea2ItemGot data matches 0 run clone -54 10 87   -54 10 87   -50 19 92
+    #未通过本关，提示通关后可获得信物
+    execute if score Idea2ItemGot data matches 1 run function levels/idea2/notice

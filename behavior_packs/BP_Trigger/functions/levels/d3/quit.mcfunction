@@ -1,5 +1,5 @@
 #被该关卡选中的玩家显示提示信息
-tellraw @s[scores={class=4,grade=3}] {"rawtext": [{"text":"[D3]已退出"}]}
+tellraw @s[scores={class=4,grade=3}] {"rawtext": [{"text":"[D3]"},{ "translate": "tellraw.quit"}]}
 
 #关卡结构重置 /structure save D3 -64 21 112   -44 28 132 disk
 #关卡地形覆盖，含两个矿车

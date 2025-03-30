@@ -1,5 +1,5 @@
 #被该关卡选中的玩家显示提示信息
-tellraw @a[scores={class=2,grade=2}] {"rawtext": [{"text":"[B2]已重置关卡"}]}
+tellraw @a[scores={class=2,grade=2}] {"rawtext": [{"text":"[B2]"},{ "translate": "tellraw.reset" }]}
 
 #清除被该关卡选中的玩家背包
 clear @a[scores={class=2,grade=2}]

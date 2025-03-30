@@ -17,7 +17,7 @@ clone 36 15 35 36 18 36 19 22 6
 execute positioned as @e[type=trigger:npc_author] run clear @p gold_ingot -1
 
 #作者对话
-tellraw @a {"rawtext": [{"text":"<GreeLeaf> 感谢你找到了丢失的信物，这就为你开启奖励关"}]}
+tellraw @a {"rawtext": [{ "translate": "tellraw.npc_author.idea.open" }]}
 
 #显示解锁提示信息
-tellraw @a {"rawtext": [{"text":"[IDEA 2]已解锁奖励关②[失落花园]"}]}
+tellraw @a {"rawtext": [{ "translate": "tellraw.idea2.unlock" }]}
