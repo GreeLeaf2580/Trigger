@@ -11,9 +11,9 @@
 
 ## 假定当前正在使用网易版
 scoreboard players set isNetease data 1
-## 给玩家添加标签cao（这是屏蔽词，如果为网易版，该命令无法执行）
-tag @a add cao
-## 若检测到有cao的玩家，即上一条命令未被屏蔽，证明是国际版，更改data.isNetease
-execute if entity @a[tag=cao] run scoreboard players set isNetease data 0
+## 给玩家添加标签sb（这是屏蔽词，如果为网易版，该命令无法执行）
+tag @a add sb
+## 若检测到有sb的玩家，即上一条命令未被屏蔽，证明是国际版，更改data.isNetease
+execute if entity @a[tag=sb] run scoreboard players set isNetease data 0
 ## 移除辅助标签
-tag @a remove cao
+tag @a remove sb

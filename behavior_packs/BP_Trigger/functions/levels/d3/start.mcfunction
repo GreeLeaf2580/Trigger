@@ -19,11 +19,5 @@ execute positioned -21 24 -6 as @p[scores={class=4,grade=3}] at @s run clear @s
 #将被该关卡选中的玩家传送至选关
 tp @a[scores={class=4,grade=3}] -54 22 122 facing -44 22 132
 
-#将被该关卡选中的玩家显示标题
-titleraw @a[scores={class=4,grade=3}] title { "rawtext": [{ "translate": "title.d3.name" }] }
-
-#将被该关卡选中的玩家显示副标题
-title @a[scores={class=4,grade=3}] subtitle -D3-
-
 #执行重置该关卡的函数
 function levels/d3/reset

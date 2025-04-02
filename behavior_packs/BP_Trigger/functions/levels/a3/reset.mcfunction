@@ -38,5 +38,5 @@ summon minecraft:chicken -48 19 20  0 0 minecraft:ageable_grow_up
 #在-48 19 28起点生成兔子
 summon minecraft:chicken -48 19 28  0 0 minecraft:ageable_grow_up
 
-#关卡结构重置 /structure save A3 -64 24 33   -44 18 15 disk
-structure load A3 -64 18 15 0_degrees none false true  false
+#关卡结构重置 /structure save A3 -64 24 33   -44 16 15 disk
+structure load A3 -64 16 15 0_degrees none false true  false

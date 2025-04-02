@@ -19,15 +19,6 @@ execute positioned -24 22 0 as @p[scores={class=7,grade=1}] at @s run clear @s
 #将被该关卡选中的玩家传送至选关
 tp @a[scores={class=7,grade=1}] 1 21 254 facing 5 21 254
 
-#将被该关卡选中的玩家显示标题
-titleraw @a[scores={class=7,grade=1}] title { "rawtext": [{ "translate": "title.x.name" }] }
-
-#将被该关卡选中的玩家显示副标题
-title @a[scores={class=7,grade=1}] subtitle -X-
-
-#将被该关卡选中的玩家显示活动栏
-titleraw @a[scores={class=7,grade=1}] actionbar { "rawtext": [{ "translate": "title.x.actionbar" }] }
-
 #在x里允许掉落
 gamerule doentitydrops true
 

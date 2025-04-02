@@ -41,6 +41,9 @@ gamerule doentitydrops true
 #清除药水效果
 effect @a[scores={class=7,grade=1}] clear
 
+#清除玩家的经验值
+xp -1000L @a[scores={class=7,grade=1}]
+
 ##关卡结构重置
     #上半部分 /structure save Xup -73 45 265   -30 21 244 disk
     structure load Xup -73 21 244 0_degrees none true true false

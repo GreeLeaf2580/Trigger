@@ -19,11 +19,5 @@ execute positioned 19 23 6 as @p[scores={class=9,grade=2}] at @s run clear @s
 #将被该关卡选中的玩家传送至选关
 tp @a[scores={class=9,grade=2}] -116 21 115 facing -100 21 131
 
-#将被该关卡选中的玩家显示标题
-titleraw @a[scores={class=9,grade=2}] title { "rawtext": [{ "translate": "title.idea2.name" }] }
-
-#将被该关卡选中的玩家显示副标题
-title @a[scores={class=9,grade=2}] subtitle -IDEA 2-
-
 #执行重置该关卡的函数
 function levels/idea2/reset

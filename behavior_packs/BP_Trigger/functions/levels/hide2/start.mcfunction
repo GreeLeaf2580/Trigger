@@ -18,11 +18,6 @@ execute positioned 18 23 6 as @p[scores={class=8,grade=2}] at @s run clear @s
 
 #将被该关卡选中的玩家传送至选关
 tp @a[scores={class=8,grade=2}] -114 22 60 facing -102 22 47
-#将被该关卡选中的玩家显示标题
-titleraw @a[scores={class=8,grade=2}] title { "rawtext": [{ "translate": "title.hide2.name" }] }
-
-#将被该关卡选中的玩家显示副标题
-title @a[scores={class=8,grade=2}] subtitle -HIDE 2-
 
 #执行重置该关卡的函数
 function levels/hide2/reset

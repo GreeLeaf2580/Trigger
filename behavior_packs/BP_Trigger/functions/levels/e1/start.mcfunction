@@ -19,11 +19,5 @@ execute positioned -19 22 -6 as @p[scores={class=5,grade=1}] at @s run clear @s
 #将被该关卡选中的玩家传送至选关
 tp @a[scores={class=5,grade=1}] 0 26 155 facing 5 22 160
 
-#将被该关卡选中的玩家显示标题
-titleraw @a[scores={class=5,grade=1}] title { "rawtext": [{ "translate": "title.e1.name" }] }
-
-#将被该关卡选中的玩家显示副标题
-title @a[scores={class=5,grade=1}] subtitle -E1-
-
 #执行重置该关卡的函数
 function levels/e1/reset

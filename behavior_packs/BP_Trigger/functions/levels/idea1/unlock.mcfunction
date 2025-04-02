@@ -17,7 +17,9 @@ clone 38 15 35 38 18 36 21 22 6
 execute positioned as @e[type=trigger:npc_author] run clear @p minecraft:carrot -1
 
 #作者对话
-tellraw @a {"rawtext": [{ "translate": "tellraw.npc_author.idea.open" }]}
+execute if score isNetease data matches 0 run tellraw @a {"rawtext": [{"translate":"tellraw.npc_author.name"},{ "translate": "tellraw.npc_author.idea.open" }]}
+
+execute unless score isNetease data matches 0 run tellraw @a {"rawtext": [{"translate":"tellraw.npc_author.name.isNetease"},{ "translate": "tellraw.npc_author.idea.open" }]}
 
 #显示解锁提示信息
 tellraw @a {"rawtext": [{ "translate": "tellraw.idea1.unlock" }]}

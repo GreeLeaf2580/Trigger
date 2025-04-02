@@ -88,6 +88,7 @@ tellraw.reset= 已重置关卡
 tellraw.quit= 已退出
 tellraw.complete= 已完成！
 tellraw.class=类型]
+tellraw.x.setblockSand=已投送一个沙子
 
 ## 奖励关和隐藏关相关
 tellraw.idea1.notice=通过本关后将获得信物[胡萝卜]
@@ -106,21 +107,23 @@ tellraw.idea3.unlock=[IDEA 3]已解锁奖励关③[压力板的压力]
 
 ## 大厅对话
 ## NPC
-tellraw.npc_author.sayTips0=<GreeLeaf> 你好呀~获得信物可以交给我哦~
-tellraw.npc_author.sayTips1=<GreeLeaf> 你好~我隐约记得信物[胡萝卜]在有兔子的地方
-tellraw.npc_author.sayTips2=<GreeLeaf> 据说信物[金锭]在色彩斑斓的地方
-tellraw.npc_author.sayTips3=<GreeLeaf> qwq 突然想起来信物[木斧]被我忘在某个洞穴深处
-tellraw.npc_author.sayTips4=<GreeLeaf> awa 隐藏关好像都和小麦种子有关
-tellraw.npc_author.sayTips5=<GreeLeaf> 碰触大厅里的水可以切换旁观模式
-tellraw.npc_author.sayTips6=<GreeLeaf> 完成难度1即可开启难度2和下一类型
-tellraw.npc_author.sayTips7=<GreeLeaf> 查看“关于”以获取作者信息
-tellraw.npc_author.sayTips8=<GreeLeaf> 查看“引导”以获取本图信息
-tellraw.npc_author.sayTips9=<GreeLeaf> 点击“重置”按钮可重置游戏进度
-tellraw.npc_author.sayTips10=<GreeLeaf> 阅读“选项”的《关卡类型介绍》可获取每类玩法说明
-tellraw.npc_author.sayTips11=<GreeLeaf> 你好呀~
-tellraw.npc_author.sayTips16=<GreeLeaf> awa
+tellraw.npc_author.name=<GreeLeaf> 
+tellraw.npc_author.name.isNetease=<o绿叶o> 
+tellraw.npc_author.sayTips0=你好呀~获得信物可以交给我哦~
+tellraw.npc_author.sayTips1=你好~我隐约记得信物[胡萝卜]在有兔子的地方
+tellraw.npc_author.sayTips2=据说信物[金锭]在色彩斑斓的地方
+tellraw.npc_author.sayTips3=qwq 突然想起来信物[木斧]被我忘在某个洞穴深处
+tellraw.npc_author.sayTips4=awa 隐藏关好像都和小麦种子有关
+tellraw.npc_author.sayTips5=碰触大厅里的水可以切换旁观模式
+tellraw.npc_author.sayTips6=完成难度1即可开启难度2和下一类型
+tellraw.npc_author.sayTips7=查看“关于”以获取作者信息
+tellraw.npc_author.sayTips8=查看“引导”以获取本图信息
+tellraw.npc_author.sayTips9=点击“重置”按钮可重置游戏进度
+tellraw.npc_author.sayTips10=阅读“选项”的《关卡类型介绍》可获取每类玩法说明
+tellraw.npc_author.sayTips11=你好呀~
+tellraw.npc_author.sayTips16=awa
 
-tellraw.npc_author.idea.open=<GreeLeaf> 感谢你找到了丢失的信物，这就为你开启奖励关
+tellraw.npc_author.idea.open=感谢你找到了丢失的信物，这就为你开启奖励关
 
 ## 关于
 title.credits.1=二字十部曲系列
@@ -175,5 +178,10 @@ tellraw.guide.21=§e最后感谢您的下载和体验，祝您游
 tellraw.restart.notice=§4[!警告!]如果确定重置进度，请1秒内再按一次
 tellraw.restart.recover=§4[!警告!]§f重置按钮已恢复
 tellraw.restart.init_levels=§4[!警告!]已重置所有进度
+
+## 旁观者模式
+tellraw.spectator.through.1=§a*穿过正上方的树叶环洞即可回到游戏
+tellraw.spectator.through.2=§e*抬头可tp到随机一个正在游玩的玩家，若没有则回到大厅
+tellraw.spectator.notfound=§e*未找到正在游玩的玩家，将您送回大厅
 
 

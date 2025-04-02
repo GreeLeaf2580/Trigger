@@ -14,6 +14,9 @@ execute as @a[scores={class=0,grade=0},m=adventure] at @s[x=0,y=20,z=0,dx=3,dy=3
 
 execute as @a[scores={class=0,grade=0},m=spectator,rx=-85] if entity @a[scores={class=!0,grade=!0}] run tp @s @r[scores={class=!0,grade=!0}]
 
-execute as @a[scores={class=0,grade=0},m=spectator,rx=-85] unless entity @a[scores={class=!0,grade=!0}] run tellraw @s {"rawtext": [{"text":"§e*未找到正在游玩的玩家，将您送回大厅"}]}
+execute as @a[scores={class=0,grade=0},m=spectator,rx=-85] unless entity @a[scores={class=!0,grade=!0}] run tellraw @s {"rawtext": [{"translate":"tellraw.spectator.notfound"}]}
 
 execute as @a[scores={class=0,grade=0},m=spectator,rx=-85] unless entity @a[scores={class=!0,grade=!0}] run tp @s 0 26 0  180 0
+
+#如果大厅里没有作者npc那就生成一个
+execute positioned -2 21 -5 unless entity @e[type=trigger:npc_author,r=1] run summon trigger:npc_author ~~~ ~~ skin_4

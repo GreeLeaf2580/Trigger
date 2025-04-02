@@ -18,11 +18,6 @@ execute positioned -19 24 -6 as @p[scores={class=6,grade=3}] at @s run clear @s
 
 #将被该关卡选中的玩家传送至选关
 tp @a[scores={class=6,grade=3}] -54 21 188 facing -64 21 189
-#将被该关卡选中的玩家显示标题
-titleraw @a[scores={class=6,grade=3}] title { "rawtext": [{ "translate": "title.f3.name" }] }
-
-#将被该关卡选中的玩家显示副标题
-title @a[scores={class=6,grade=3}] subtitle -F3-
 
 #执行重置该关卡的函数
 function levels/f3/reset

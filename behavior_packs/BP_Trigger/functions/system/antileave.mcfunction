@@ -16,6 +16,7 @@ execute as @a[scores={isOnline=0}] at @s run function lib/get_data/client
     execute as @a[scores={isOnline=0}] at @s run scoreboard players set @s class 0
     execute as @a[scores={isOnline=0}] at @s run scoreboard players set @s grade 0
 
+
 function lib/get_data/player_is_alive
 
 #玩家死亡则回到大厅

@@ -70,11 +70,11 @@ title.f3.name=Icebreaker
 title.x.name=Trigger
 title.hide1.name=Take Aim
 title.hide2.name=RipplingWheat
-title.idea1.name=Road of Parkour
-title.idea2.name=The Lost Garden
+title.idea1.name=Parkour Path
+title.idea2.name=Lost Garden
 title.idea3.name=PressurePlate's Pressure
 
-title.x.actionbar=Closely interconnected. Don't kick down the ladder.
+title.x.actionbar=Watch your step. Don't kick down the ladder.
 
 title.class.cheer.name= class
 title.class.cheer.subtitle=-Completed!-
@@ -87,15 +87,16 @@ tellraw.reset= reset this level
 tellraw.quit= quited
 tellraw.complete= completed!
 tellraw.class= class]
+tellraw.x.setblockSand= send a sand.
 
 ## HIDE&IDEA class
-tellraw.idea1.notice= will get [Carrot] when complete this level.
-tellraw.idea2.notice= will get [Gold Ingot] when complete this level.
-tellraw.idea3.notice= will get [Wooden Axe] when complete this level.
+tellraw.idea1.notice= complete to get [Carrot] Token
+tellraw.idea2.notice= complete to get [Gold Ingot] Token
+tellraw.idea3.notice= complete to get [Wooden Axe] Token
 
-tellraw.idea1.itemGot= You get [Carrot]. Please Unlock IDEA 1 First.
-tellraw.idea2.itemGot= You get [Gold Ingot]. Please Unlock IDEA 2 First.
-tellraw.idea3.itemGot= You get [Wooden Axe]. Please Unlock IDEA 3 First.
+tellraw.idea1.itemGot= Got [Carrot]. Please Unlock IDEA 1 First.
+tellraw.idea2.itemGot= Got [Gold Ingot]. Please Unlock IDEA 2 First.
+tellraw.idea3.itemGot= Got [Wooden Axe]. Please Unlock IDEA 3 First.
 
 tellraw.hide1.unlock= Unlock HIDE 1 [Take Aim]
 tellraw.hide2.unlock= Unlock HIDE 2 [RipplingWheat]
@@ -104,21 +105,23 @@ tellraw.idea2.unlock=[IDEA 2] Unlock
 tellraw.idea3.unlock=[IDEA 3] Unlock
 
 ## Hall npc_author's log
-tellraw.npc_author.sayTips0=<GreeLeaf> Chat with me if you get Token.
-tellraw.npc_author.sayTips1=<GreeLeaf> [Carrot] is in place where are rabbits.
-tellraw.npc_author.sayTips2=<GreeLeaf> [Gold Ingot] prefer colorful place.
-tellraw.npc_author.sayTips3=<GreeLeaf> Happen to lost [Wooden Axe] in a cave.
-tellraw.npc_author.sayTips4=<GreeLeaf> HIDE class all about wheat seeds.
-tellraw.npc_author.sayTips5=<GreeLeaf> Contact water to change Spectator Mode in hall.
-tellraw.npc_author.sayTips6=<GreeLeaf> Unlock grade 2 and next class if complete grade 1.
-tellraw.npc_author.sayTips7=<GreeLeaf> "Credits" gets author crew information.
-tellraw.npc_author.sayTips8=<GreeLeaf> "Guide" gets information about this world.
-tellraw.npc_author.sayTips9=<GreeLeaf> "Restart" Button will restart this world.
-tellraw.npc_author.sayTips10=<GreeLeaf> Read CLASS INFO in "Options".
-tellraw.npc_author.sayTips11=<GreeLeaf> Ciallo~
-tellraw.npc_author.sayTips16=<GreeLeaf> :)
+tellraw.npc_author.name=<GreeLeaf> 
+tellraw.npc_author.name.isNetease=<o绿叶o> 
+tellraw.npc_author.sayTips0=Yo! Bring me Tokens if you find.
+tellraw.npc_author.sayTips1=[Carrot] is in place where are rabbits.
+tellraw.npc_author.sayTips2=[Gold Ingot] prefer colorful place.
+tellraw.npc_author.sayTips3=Happen to lost [Wooden Axe] in a cave.
+tellraw.npc_author.sayTips4=HIDE class all about wheat seeds.
+tellraw.npc_author.sayTips5=Contact water to change Spectator Mode in hall.
+tellraw.npc_author.sayTips6=Unlock grade 2 and next class if complete grade 1.
+tellraw.npc_author.sayTips7=Check "Credits" for details.
+tellraw.npc_author.sayTips8="Guide" gets information about this world.
+tellraw.npc_author.sayTips9="Restart" Button will restart this world.
+tellraw.npc_author.sayTips10=Read CLASS INFO in "Options".
+tellraw.npc_author.sayTips11=Hello～(∠・ω< )⌒☆
+tellraw.npc_author.sayTips16=:)
 
-tellraw.npc_author.idea.open=<GreeLeaf> Oh. You find the lost Token. I'll unlock this level.
+tellraw.npc_author.idea.open=Nice found! I'll unlock this level.
 
 ## Credits
 title.credits.1=1 Word, 10 Worlds
@@ -126,11 +129,11 @@ subtitle.credits.1=This world belong to this series.
 title.credits.2=RipplingWheat
 subtitle.credits.2=this world is for missing him
 title.credits.3=GreeLeaf
-subtitle.credits.3=built this world
+subtitle.credits.3=build this world
 
 subtitle.credits.4=Test Crew
 
-subtitle.credits.5=Thanks for technical supports
+subtitle.credits.5=Thanks for tech supports
 title.credits.6=AB workshop
 subtitle.credits.6=Thanks for supports
 title.credits.7=You
@@ -140,14 +143,14 @@ tellraw.credits.1=[Credits]
 tellraw.credits.2=This world belong to ONE WORD TEN WORLDS series
 tellraw.credits.3=This world is for missing RipplingWheat
 tellraw.credits.4=This world is built by GreeLeaf
-tellraw.credits.5=Test Crew: YZBWDLT PigeonKI Andy7343 tck1122 lanos212 Ender5207541 Echeng HuanGuangYC SoistonH ProjectXero
+tellraw.credits.5=Test Crew: YZBWDLT PigeonKI Andy7343 tck1122 lanos212 Ender5207541 Echeng HuanGuangYC MohenMH ProjectXero
 tellraw.credits.6=Technical Suports: YZBWDLT ProjectXero 6g3y WildCrap bsy
-tellraw.credits.7=Thanks for your Download and Play
+tellraw.credits.7=Big thanks for Download and Play
 tellraw.credits.8=Thands for video if you are Youtuber.
 
 ## Guide
 tellraw.guide.1=[Guide]
-tellraw.guide.2=You can use §aReset §fand §bQuit§f in the level.
+tellraw.guide.2=Use §aReset §fand §bQuit§f in the level.
 tellraw.guide.3=There are §e3 Token §fOver that.
 tellraw.guide.4=Now, You can see all 24 levels.
 tellraw.guide.5=7 mainline levels are marked by §alime.
@@ -155,20 +158,25 @@ tellraw.guide.6=12 side levels are marked by §2green.
 tellraw.guide.7=Levels contain §a6 Classes, marked "A"to"F"&"X".
 tellraw.guide.8=Each Class contains §63 Grade of level.
 tellraw.guide.9=§e§lUnlock grade 2 and next class if complete grade 1.
-tellraw.guide.10=Unlock A2 and B1 if complete A1, for example.
-tellraw.guide.11=Just Unlock A3 if complete A2.
-tellraw.guide.12=X Class is hard and ALL Class Mix.
-tellraw.guide.13=Get tips in the frames of level.
+tellraw.guide.10=For example, A1 -> A2 & B1.
+tellraw.guide.11=A2 -> A3 only.
+tellraw.guide.12=X = Final boss level (mix of A-F).
+tellraw.guide.13=Item Frames give hints in tough levels.
 tellraw.guide.14=IDEA CLASS is marked by §eYellow.
 tellraw.guide.15=HIDE CLASS is marked by §7Gray.
 tellraw.guide.16=Find Token in levels and Complete to get it.
-tellraw.guide.17=Chat with author if you get Token to unlock IDEA CLASS.
-tellraw.guide.18=HIDE CLASS needs not Token.
-tellraw.guide.19=§6You can play again after complete.
-tellraw.guide.20=§6You can also cooperate with your friends.
+tellraw.guide.17=Trade Tokens to for IDEA CLASS.
+tellraw.guide.18=HIDE CLASS just find it.
+tellraw.guide.19=§6Replay any unlocked level.
+tellraw.guide.20=§6Supports multiplayer - squard up!
 tellraw.guide.21=§eThanks for your Download and Play. Enjoy~
 
 ## restart
-tellraw.restart.notice=§4[!WARNING!] Are you sure to restart? Press again in 1s.
-tellraw.restart.recover=§4[!WARNING!] §fRestart Button recovered.
-tellraw.restart.init_levels=§4[!WARNING!] You restarted this world.
+tellraw.restart.notice=§4[!] Confirm restart within 1 sec!
+tellraw.restart.recover=§4[!] §fRestart Button cooldown.
+tellraw.restart.init_levels=§4[!] Restartting this world... Done!
+
+## 旁观者模式
+tellraw.spectator.through.1=§a*Pass through the leaf ring above to return to game.
+tellraw.spectator.through.2=§e*Look up to /tp to a random player – or back to hall.
+tellraw.spectator.notfound=§e*No active players found. Warping you to hall...

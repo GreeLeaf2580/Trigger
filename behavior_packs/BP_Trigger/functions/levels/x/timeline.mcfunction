@@ -30,5 +30,11 @@ execute if block -66 35 254 minecraft:wheat ["growth"=0] if block 18 22 7 quartz
     #鸡是否走到压力板上
         execute if block -39 27 251 minecraft:heavy_weighted_pressure_plate ["redstone_signal"=1] if block -46 31 254 minecraft:quartz_block run fill -46 31 256 -46 31 252 air [] destroy
 
+    #给在上浮气泡柱的玩家飘浮，因为玩家游泳和潜行能克服上浮气泡住
+    execute as @a[scores={class=7,grade=1}] at @s if block ~~~ bubble_column ["drag_down"=false] run effect @a[scores={class=7,grade=1}] levitation 3600 10 true
+
+    #不在上浮气泡柱的玩家恢复
+    execute as @a[scores={class=7,grade=1}] at @s unless block ~~~ bubble_column ["drag_down"=false] run effect @a[scores={class=7,grade=1}] levitation 0
+
     #检测通关黏液块是否放上
     execute if block -73 39 254 slime [] run function levels/x/events/openDoor

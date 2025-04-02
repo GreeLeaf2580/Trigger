@@ -13,6 +13,12 @@ tp @s[scores={class=7,grade=1}] -12 21 0 90 0
 #不在x里不允许掉落
 gamerule doentitydrops false
 
+#清除药水效果
+effect @a[scores={class=7,grade=1}] clear
+
+#清除玩家的经验值
+xp -1000L @a[scores={class=7,grade=1}]
+
 #修改被该关卡选中的玩家的计分项
     #修改类型为0大厅
     execute as @s[scores={class=7,grade=1}] at @s run scoreboard players set @s class 0

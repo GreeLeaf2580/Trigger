@@ -5,10 +5,15 @@
 execute if block -58 19 24 minecraft:heavy_weighted_pressure_plate ["redstone_signal"=1] run function levels/a3/complete
 
 #检测是否按下按钮
-    #放置草方块
-    execute if block -58 16 34 redstone_torch run clone -59 8 32 -59 9 32 -53 18 24
-    #放置告示牌
-    execute unless block -58 16 34 redstone_torch run clone -61 8 32 -61 9 32 -53 18 24
+    #切换为水  /structure save A3land -53 19 29   -48 18 19 disk
+    execute if block -53 22 31 minecraft:stone_button ["button_pressed_bit"=true,"facing_direction"=1] run structure load A3water -53 18 19 0_degrees none false true true
+
+    execute if block -53 22 31 minecraft:stone_button ["button_pressed_bit"=true,"facing_direction"=1] run setblock -53 22 31 minecraft:warped_button ["button_pressed_bit"=false,"facing_direction"=1] destroy
+
+    #切换为草方块  /structure save A3water -53 19 29   -48 18 19 disk
+    execute if block -53 22 31 minecraft:warped_button ["button_pressed_bit"=true,"facing_direction"=1] run structure load A3land -53 18 19 0_degrees none false true false
+
+    execute if block -53 22 31 minecraft:warped_button ["button_pressed_bit"=true,"facing_direction"=1] run setblock -53 22 31 minecraft:stone_button ["button_pressed_bit"=false,"facing_direction"=1] destroy
 
 
 #检测后继条件

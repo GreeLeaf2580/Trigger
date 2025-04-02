@@ -4,6 +4,12 @@ tellraw @a[scores={class=9,grade=1}] {"rawtext": [{"text":"[IDEA 1]"},{ "transla
 #清除被该关卡选中的玩家背包
 clear @a[scores={class=9,grade=1}]
 
+#将被该关卡选中的玩家显示标题
+titleraw @a[scores={class=9,grade=1}] title { "rawtext": [{ "translate": "title.idea1.name" }] }
+
+#将被该关卡选中的玩家显示副标题
+title @a[scores={class=9,grade=1}] subtitle -IDEA 1-
+
 #给予被选中玩家物品
     #给予“重置关卡”
     execute as @a[scores={class=9,grade=1}] at @s run replaceitem entity @s slot.hotbar 7 trigger:reset 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
