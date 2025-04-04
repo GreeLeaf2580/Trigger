@@ -85,7 +85,7 @@ subtitle.class.cheer.mainline=Complete all mainline levels!!!
 ## Levels' operation
 tellraw.reset= reset this level
 tellraw.quit= quited
-tellraw.complete= completed!
+tellraw.finish= completed!
 tellraw.class= class]
 tellraw.x.setblockSand= send a sand.
 

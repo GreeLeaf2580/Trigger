@@ -86,24 +86,25 @@ subtitle.class.cheer.mainline=恭喜通关！！！
 ## 关卡操作
 tellraw.reset= 已重置关卡
 tellraw.quit= 已退出
-tellraw.complete= 已完成！
+## [tellraw.com]plete的.com是NE屏蔽词
+tellraw.finish= 已完成！
 tellraw.class=类型]
-tellraw.x.setblockSand=已投送一个沙子
+tellraw.x.setblockSand= 已投送一个沙子
 
 ## 奖励关和隐藏关相关
-tellraw.idea1.notice=通过本关后将获得信物[胡萝卜]
-tellraw.idea2.notice=通过本关后将获得信物[金锭]
-tellraw.idea3.notice=通过本关后将获得信物[木斧]
+tellraw.idea1.notice= 通过本关后将获得信物[胡萝卜]
+tellraw.idea2.notice= 通过本关后将获得信物[金锭]
+tellraw.idea3.notice= 通过本关后将获得信物[木斧]
 
-tellraw.idea1.itemGot=获得纪念品[胡萝卜]，请开启奖励关①后再游玩关卡
-tellraw.idea2.itemGot=获得纪念品[金锭]，请开启奖励关②后再游玩关卡
-tellraw.idea3.itemGot=获得纪念品[木斧]，请开启奖励关③后再游玩关卡
+tellraw.idea1.itemGot= 获得纪念品[胡萝卜]，请开启奖励关①后再游玩关卡
+tellraw.idea2.itemGot= 获得纪念品[金锭]，请开启奖励关②后再游玩关卡
+tellraw.idea3.itemGot= 获得纪念品[木斧]，请开启奖励关③后再游玩关卡
 
-tellraw.hide1.unlock=已解锁隐藏关①[草木皆兵]
-tellraw.hide2.unlock=已解锁隐藏关②[风吹麦浪]
-tellraw.idea1.unlock=[IDEA 1]已解锁奖励关①[跑酷之路]
-tellraw.idea2.unlock=[IDEA 2]已解锁奖励关②[失落的花园]
-tellraw.idea3.unlock=[IDEA 3]已解锁奖励关③[压力板的压力]
+tellraw.hide1.unlock= 已解锁隐藏关①[草木皆兵]
+tellraw.hide2.unlock= 已解锁隐藏关②[风吹麦浪]
+tellraw.idea1.unlock=[IDEA 1] 已解锁奖励关①[跑酷之路]
+tellraw.idea2.unlock=[IDEA 2] 已解锁奖励关②[失落的花园]
+tellraw.idea3.unlock=[IDEA 3] 已解锁奖励关③[压力板的压力]
 
 ## 大厅对话
 ## NPC

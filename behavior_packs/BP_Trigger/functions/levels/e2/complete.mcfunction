@@ -1,5 +1,5 @@
 #所有玩家显示提示信息
-tellraw @a {"rawtext": [{"text":"[E2]"},{ "translate": "tellraw.complete"}]}
+tellraw @a {"rawtext": [{"text":"[E2]"},{ "translate": "tellraw.finish"}]}
 
 #播放通关的音效
     #播放延迟时间

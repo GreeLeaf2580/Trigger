@@ -5,7 +5,7 @@
     #播放选定的音效
     scoreboard players set soundPlayer active 17
 
-tellraw @a {"rawtext": [{"text":"[X]"},{ "translate": "tellraw.complete"}]}
+tellraw @a {"rawtext": [{"text":"[X]"},{ "translate": "tellraw.finish"}]}
 titleraw @a title { "rawtext": [{ "translate": "title.class.cheer.mainline" }] }
 titleraw @a subtitle { "rawtext": [{ "translate": "subtitle.class.cheer.mainline" }] }
 
