@@ -42,4 +42,4 @@
 - [苦力怕论坛](https://klpbbs.com/thread-159914-1-1.html)
 - [TITAIKE](https://www.titaike.cn/6649.html)
 - [MCPEDL](https://mcpedl.com/trigger/)
-- 网易中国版资源中心 *（搜索地图名：触发+）*
+- [网易中国版资源中心](https://resource-minecraft.h5.163.com/#/detail?uid=2156009524&id=4678791372825514220) *（搜索地图名：触发+，组件码：2351523）*
