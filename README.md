@@ -50,12 +50,7 @@ _悬停以查看提取码_
 
 ### 各大论坛或平台
 
-- 国内
-  [苦力怕论坛](https://klpbbs.com/thread-159914-1-1.html)
-  [MineBBS](https://www.minebbs.com/resources/11303/)
-  [TITAIKE](https://www.titaike.cn/6649.html)
-  [网易中国版资源中心](https://resource-minecraft.h5.163.com/#/detail?uid=2156009524&id=4678791372825514220) _（搜索地图名：触发+，组件码：2351523）_
-- 国际
-  [GitHub](https://github.com/GreeLeaf2580/Trigger)
-  [MCPEDL](https://mcpedl.com/trigger/)
-  [Planet Minecraft Community](https://www.planetminecraft.com/project/trigger-6600634/)
+| | | | | |
+| --- | --- | --- | --- | --- |
+|国内|[苦力怕论坛](https://klpbbs.com/thread-159914-1-1.html)|[MineBBS](https://www.minebbs.com/resources/11303/) |[TITAIKE](https://www.titaike.cn/6649.html)|[网易中国版资源中心](https://resource-minecraft.h5.163.com/#/detail?uid=2156009524&id=4678791372825514220 "搜索地图名：触发+，组件码：2351523")
+|国际|[GitHub](https://github.com/GreeLeaf2580/Trigger)|[MCPEDL](https://mcpedl.com/trigger/)|[Planet Minecraft](https://www.planetminecraft.com/project/trigger-6600634/)
