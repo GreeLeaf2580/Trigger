@@ -70,11 +70,110 @@ title.f3.name=Icebreaker
 title.x.name=Trigger
 title.hide1.name=Take Aim
 title.hide2.name=RipplingWheat
-title.idea1.name=Parkour Path
+title.idea1.name=Just Parkour Path
 title.idea2.name=Lost Garden
 title.idea3.name=PressurePlate's Pressure
 
-title.x.actionbar=Watch your step. Don't kick down the ladder.
+## Levels'Goals
+title.goal.actionbar=[Goals] 
+title.a1.actionbar=Move a Chicken step on Pressure Plate
+title.a2.actionbar=Get Enough Animals to step on Pressure Plate
+title.a3.actionbar=Open the secret path and step on the pressure plate behind it
+title.b1.actionbar=Move the Lime Concrete Powder onto Block of Gold
+title.b2.actionbar=Move the Lime Concrete Powder onto Block of Gold
+title.b3.actionbar=Move the Sand onto Block of Gold
+title.c1.actionbar=Conductive the Lime Concrete
+title.c2.actionbar=Conductived all the Lime Concrete
+title.c3.actionbar=Fill Cauldron Full with water
+title.d1.actionbar=Move the Minecart onto Detector Rail
+title.d2.actionbar=Move the Minecart onto Detector Rail and Light all Redstone Lamps Up
+title.d3.actionbar=Light all Redstone Lamps Up
+title.e1.actionbar=Get Slimeball
+title.e2.actionbar=Craft and place Slime Block
+title.e3.actionbar=Craft and place Slime Block
+title.f1.actionbar=Move the Slimeball to touch Pressure Plate
+title.f2.actionbar=Move Slimeballs to touch all Pressure Plates
+title.f3.actionbar=Destory and Move Slimeballs to touch all Pressure Plates
+title.x.actionbar=Open and Enter the DOOR
+title.hide1.actionbar=Light all Redstone Lamps up
+title.hide2.actionbar=Weed & Sow & Harvest
+title.idea1.actionbar=Activate Pressure Plate
+title.idea2.actionbar=Activate Pressure Plate
+title.idea3.actionbar=Open the WAY and Activate Pressure Plate
+
+## Levels'Hints
+tellraw.a1.hint1=§eActive the Lever to switch state of Piston
+tellraw.a1.hint2=§eChickenss follow players holding wheat seeds
+
+tellraw.a2.hint1=§e3 feathers and 3 rabbit hides on the wall. What does that remind you of?
+tellraw.a2.hint2=§eBreed animals with item
+tellraw.a2.hint3=§eBreed 1 Chickens and 1 Rabbit separately, then attract all onto the pressure plate, totaling 6 animals
+
+tellraw.a3.hint1=§eThe button switchs Pressure Plate/Water flow state; Redstone Lamps indicate the number of animals on the plate
+tellraw.a3.hint2=§eBreed and attract the required number of animals onto the Pressure Plate to open the hidden path
+tellraw.a3.hint3=§eFeed and ride the Pig onto the Pressure Plate behind the hidden path
+
+tellraw.b1.hint1=§eSticky Pistons can pull block back
+
+tellraw.b2.hint1=§ePiston worms can push blocks farther
+tellraw.b2.hint2=§eAlternating Sticky and regular Pistons extends reach
+
+tellraw.b3.hint1=§eHow to push sand away under waterfall?Just set the button on piston
+tellraw.b3.hint2=§ePush Concrete Powder to make a path
+tellraw.b3.hint3=§eSequence of sticky piston activations; Arrows indicate target positions
+
+tellraw.c1.hint1=§eSet Redstone to active Redstone Repeater
+
+tellraw.c2.hint1=§eA Repeater's delay can be modified by using the Use Item control.
+tellraw.c2.hint2=§eMatch the amount of Redstone to place
+
+tellraw.c3.hint1=§eA dispenser is hidden under the pool
+tellraw.c3.hint2=§eMaking Comparator end to end decrease the 
+tellraw.c3.hint3=§eA repeater's delay can be modified by using the Use Item control.
+
+tellraw.d1.hint1=§eActive the Lever to switch state of Rail
+
+tellraw.d2.hint1=§eMove Minecart on Detector Rail to light Restone Lamp up for Green Concrete
+
+tellraw.d3.hint1=§eDetector rails on lower Logs control upper turning Rails
+tellraw.d3.hint2=§eMove Minecart on Detector Rail to light Restone Lamp up for Green Concrete
+
+tellraw.e1.hint1=§ePistons can push you down
+
+tellraw.e2.hint1=§ePiston Head can block the Bubble Column
+
+tellraw.e3.hint1=§eCheck blocks behind Item Frames on the wall
+tellraw.e3.hint2=§eUse a Riptide Trident to launch and pass Bubble Columns
+tellraw.e3.hint3=§eBlocks behind item frames: Nearby blocks where items are hidden
+
+tellraw.f1.hint1=§eA Shulker Box is hidden around Power Snow
+
+tellraw.f2.hint1=§eA Shulker Box is hidden around Power Snow
+tellraw.f2.hint2=§eThere are TWO Pressure Plates
+tellraw.f2.hint3=§eStand by the cauldron with Frost Walker Boots to freeze water
+
+tellraw.f3.hint1=§eDig channels so Slimeballs flow to both pressure plates
+
+tellraw.x.hint1=§eYou Need 1+1+9=11 Slimeballs
+tellraw.x.hint2=§eOpen the DOOR with Slime Block Finally
+tellraw.x.hint3=§ePlace a Button on the Piston to obtain falling Sand
+tellraw.x.hint4=§eRight wall hint: Blaze Rods below Lava, Wheat Seeds above
+tellraw.x.hint5=§eLeft wall hint: Pufferfish behind water, nether wart behind lava
+tellraw.x.hint6=§eCraft a Furnace, Brewing Stand, Glass Bottle, Slime Block, Blaze Powder, and Magma Cream
+tellraw.x.hint7=§eLeft wall hint: Potions and recipes required
+
+tellraw.hide1.hint1=§eShoot the botton with the bow
+
+tellraw.hide2.hint1=§ePlant all farmland with wheat; Destroy non-wheat with a hoe
+tellraw.hide2.hint2=§eFarmland under player auto-hydrates and wheat auto-ripens
+
+tellraw.idea1.hint1=§eJust Parkour
+
+tellraw.idea2.hint2=§eJust Parkour
+
+tellraw.idea3.hint1=§eSet Slime Block on Prismarine to unlock the column
+tellraw.idea3.hint2=§eBrew Jump Boost II Potion & craft Slime Block
+tellraw.idea3.hint3=§eThere are hidden items in the tree, in the flower-bed, under the column
 
 title.class.cheer.name= class
 title.class.cheer.subtitle=-Completed!-

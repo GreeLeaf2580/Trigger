@@ -1,6 +1,9 @@
 #清除该关卡的掉落物
 execute positioned -25 19 23 run kill @e[type=item,r=9]
 
+#显示关卡目标
+titleraw @a[scores={class=1,grade=2}] actionbar  { "rawtext": [{ "translate": "title.goal.actionbar" },{ "translate": "title.a2.actionbar" }] }
+
 #检测关卡的通关条件
 execute if block -25 17 23 light_weighted_pressure_plate ["redstone_signal"=6] if score A2EntityAmount data matches 6.. run function levels/a2/complete
 

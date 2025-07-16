@@ -1,6 +1,9 @@
 #检测关卡内的装置
 
 
+#显示关卡目标
+titleraw @a[scores={class=1,grade=3}] actionbar  { "rawtext": [{ "translate": "title.goal.actionbar" },{ "translate": "title.a3.actionbar" }] }
+
 #检测关卡的通关条件
 execute if block -58 19 24 minecraft:heavy_weighted_pressure_plate ["redstone_signal"=1] run function levels/a3/complete
 

@@ -1,3 +1,6 @@
+#显示关卡目标
+titleraw @a[scores={class=1,grade=1}] actionbar  { "rawtext": [{ "translate": "title.goal.actionbar" },{ "translate": "title.a1.actionbar" }] }
+
 #检测关卡的通关条件
 execute unless block 0 19 20 heavy_weighted_pressure_plate ["redstone_signal"=0] run function levels/a1/complete
 

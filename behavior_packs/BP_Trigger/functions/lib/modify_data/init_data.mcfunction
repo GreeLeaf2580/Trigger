@@ -21,6 +21,7 @@ scoreboard objectives add state dummy "玩家状态"
 
 scoreboard objectives add class dummy "关卡类型"
 scoreboard objectives add grade dummy "关卡等级"
+scoreboard objectives add hint dummy "提示使用次数"
 # --- 数据变量重置 ---
 
 ## 基础时间数据
@@ -48,6 +49,7 @@ scoreboard players set @a state 1
 
 scoreboard players set @a class 0
 scoreboard players set @a grade 0
+scoreboard players set @a hint 0
 
 # --- 标记实体重置 ---
 kill @e[type=template:marker]

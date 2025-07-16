@@ -1,3 +1,6 @@
+#显示关卡目标
+titleraw @a[scores={class=3,grade=3}] actionbar  { "rawtext": [{ "translate": "title.goal.actionbar" },{ "translate": "title.c3.actionbar" }] }
+
 #检测关卡的通关条件
 execute if block -50 23 92 cauldron ["fill_level"=6] run function levels/c3/complete
 

@@ -11,6 +11,9 @@ titleraw @a[scores={class=8,grade=1}] title { "rawtext": [{ "translate": "title.
 title @a[scores={class=8,grade=1}] subtitle -HIDE 1-
 
 #给予被选中玩家物品
+    #给予“提示”
+    execute as @a[scores={class=8,grade=1}] at @s run replaceitem entity @s slot.hotbar 6 trigger:hint 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
+
     #给予“重置关卡”
     execute as @a[scores={class=8,grade=1}] at @s run replaceitem entity @s slot.hotbar 7 trigger:reset 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
 

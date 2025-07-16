@@ -4,7 +4,7 @@
 
 ## Update Log
 
-I rebuilt the command system with new function architecture, redesigned most Grade 2-3 levels, and added an NPC avatar of the creator. This massive overhaul relaunches the map as a brand-new resource! 
+I rebuilt the command system with new function architecture, redesigned most Grade 2-3 levels, and added an NPC avatar of the creator. This massive overhaul relaunches the map as a brand-new resource!
 
 ---
 
@@ -65,6 +65,6 @@ _Hover for code_
   [TITAIKE](https://www.titaike.cn/6649.html)
   [Netease Chinese Ver.](https://resource-minecraft.h5.163.com/#/detail?uid=2156009524&id=4678791372825514220) _（搜索地图名：触发+，组件码：2351523）_
 - International
-  [GitHub](https://github.com/GreeLeaf2580/Trigger)
+  [GitHub](https://github.com/GreeLeaf2580/Trigger/releases)
   [MCPEDL](https://mcpedl.com/trigger/)
   [Planet Minecraft Community](https://www.planetminecraft.com/project/trigger-6600634/)

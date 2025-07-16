@@ -31,7 +31,7 @@ execute if score dialogue active matches 6 if score dialogue time matches 530 ru
 
 ## [630] 
 execute if score dialogue active matches 6 if score dialogue time matches 630 run playsound random.toast @a[scores={class=0}]
-execute if score dialogue active matches 6 if score dialogue time matches 630 run tellraw @a[scores={class=0}] {"rawtext":[{ "translate": "tellraw.credits.1" },{"text":"\n"},{ "translate": "tellraw.credits.2" },{"text":"\n"},{ "translate": "tellraw.credits.3" },{"text":"\n"},{ "translate": "tellraw.credits.4" },{"text":"\n"},{ "translate": "tellraw.credits.5" },{"text":"\n"},{ "translate": "tellraw.credits.6" },{"text":"\n"},{ "translate": "tellraw.credits.7" },{"text":"\n"},{ "translate": "tellraw.credits.8" }]}
+execute if score dialogue active matches 6 if score dialogue time matches 630 run tellraw @a[scores={class=0}] {"rawtext":[{ "translate": "tellraw.credits.1" },{"text":"\n"},{ "translate": "tellraw.credits.2" },{"text":"\n"},{ "translate": "tellraw.credits.3" },{"text":"\n"},{ "translate": "tellraw.credits.4" },{"text":"\n"},{ "translate": "tellraw.credits.5" },{"text":"\n"},{ "translate": "tellraw.credits.6" },{"text":"\n"},{ "translate": "tellraw.credits.7" },{"text":"\n"},{ "translate": "tellraw.credits.8" },{"text":"\n"},{ "translate": "tellraw.credits.9" }]}
 execute if score dialogue active matches 6 if score dialogue time matches 630 run tp @a[scores={grade=-1}] 0 21 0 facing 0 21 -6
 execute if score dialogue active matches 6 if score dialogue time matches 630 run scoreboard players set @a[scores={grade=-1}] grade 0
 

@@ -446,7 +446,10 @@
         #在大厅的玩家按下1 22 6的石质按钮，替换这个按钮为禁止进入
         execute if block 1 22 6 stone_button ["button_pressed_bit"=true,"facing_direction"=2] run clone 40 19 25  40 19 25   1 22 6
 
-# -关于-
+        #如果有玩家正在玩关卡，替换该按钮为禁止进入
+        execute if entity @a[scores={grade=!0}] run clone 40 19 25  40 19 25   1 22 6
+
+# -引导-
     #按下石质进入引导
 
         #在大厅的玩家按下-1 22 6的石质按钮，运行“开始引导的函数”
@@ -459,6 +462,9 @@
         
         #在大厅的玩家按下-1 22 6的石质按钮，替换这个按钮为禁止进入
         execute if block -1 22 6 stone_button ["button_pressed_bit"=true,"facing_direction"=2] run clone 40 19 25  40 19 25   -1 22 6
+
+        #如果有玩家正在玩关卡，替换该按钮为禁止进入
+        execute if entity @a[scores={grade=!0}] run clone 40 19 25  40 19 25   -1 22 6
 
 
 # -重置-

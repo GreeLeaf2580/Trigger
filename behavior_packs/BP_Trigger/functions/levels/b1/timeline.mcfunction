@@ -1,3 +1,6 @@
+#显示关卡目标
+titleraw @a[scores={class=2,grade=1}] actionbar  { "rawtext": [{ "translate": "title.goal.actionbar" },{ "translate": "title.b1.actionbar" }] }
+
 #检测关卡的通关条件
 execute if block -4 21 61 concrete_powder ["color"="lime"] run function levels/b1/complete
 

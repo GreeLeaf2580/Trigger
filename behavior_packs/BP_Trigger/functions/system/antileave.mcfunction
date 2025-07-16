@@ -15,6 +15,7 @@ execute as @a[scores={isOnline=0}] at @s run function lib/get_data/client
     #在大厅
     execute as @a[scores={isOnline=0}] at @s run scoreboard players set @s class 0
     execute as @a[scores={isOnline=0}] at @s run scoreboard players set @s grade 0
+    execute if entity @a[scores={isOnline=0}] run playsound horn.call.0 @a
 
 
 function lib/get_data/player_is_alive

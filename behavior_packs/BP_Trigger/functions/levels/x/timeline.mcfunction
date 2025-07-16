@@ -1,3 +1,6 @@
+#显示关卡目标
+titleraw @a[scores={class=7,grade=1}] actionbar  { "rawtext": [{ "translate": "title.goal.actionbar" },{ "translate": "title.x.actionbar" }] }
+
 #检测关卡的通关条件
 execute if entity @a[scores={class=7,grade=1},x=-74,y=35,z=253,dx=0,dy=5,dz=3] run function levels/x/complete
 

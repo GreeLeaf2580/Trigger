@@ -1,3 +1,6 @@
+#显示关卡目标
+titleraw @a[scores={class=8,grade=2}] actionbar  { "rawtext": [{ "translate": "title.goal.actionbar" },{ "translate": "title.hide2.actionbar" }] }
+
 #检测关卡的通关条件
 execute if blocks -118 1 47 -100 3 65 -118 20 47 all run function levels/hide2/complete
 

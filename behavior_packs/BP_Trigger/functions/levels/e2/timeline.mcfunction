@@ -1,3 +1,6 @@
+#显示关卡目标
+titleraw @a[scores={class=5,grade=2}] actionbar  { "rawtext": [{ "translate": "title.goal.actionbar" },{ "translate": "title.e2.actionbar" }] }
+
 #检测关卡的通关条件
 execute if block -19 22 159 minecraft:slime run function levels/e2/complete
 

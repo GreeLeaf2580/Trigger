@@ -10,7 +10,11 @@ execute positioned -40 33 255 run kill @e[type=!player,r=40]
 #清除掉落物
 execute positioned -40 33 255 run kill @e[type=!player,r=40]
 
+
+
 #给予被选中玩家物品
+    #给予“提示”
+    execute as @a[scores={class=7,grade=1}] at @s run replaceitem entity @s slot.hotbar 6 trigger:hint 7 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
     #给予“重置关卡”
     execute as @a[scores={class=7,grade=1}] at @s run replaceitem entity @s slot.hotbar 7 trigger:reset 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
 

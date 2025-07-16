@@ -1,3 +1,6 @@
+#显示关卡目标
+titleraw @a[scores={class=3,grade=2}] actionbar  { "rawtext": [{ "translate": "title.goal.actionbar" },{ "translate": "title.c2.actionbar" }] }
+
 #检测关卡的通关条件
 execute if block -29 21 84 powered_repeater run function levels/c2/complete
 

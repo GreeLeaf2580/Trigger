@@ -42,6 +42,7 @@ functions.settings.developer_mode.enabled=开发者模式已启用
 
 item.trigger:quit.name=§b退出关卡
 item.trigger:reset.name=§a重置关卡
+item.trigger:hint.name=§e提示
 
 tile.frame.name=物品展示框
 item.spawn_egg.entity.template:npc.name=作者 NPC 刷怪蛋
@@ -74,7 +75,106 @@ title.idea1.name=跑酷之路
 title.idea2.name=失落的花园
 title.idea3.name=压力板的压力
 
-title.x.actionbar=环环相扣，当心过河拆桥
+## 关卡目标
+title.goal.actionbar=[关卡目标] 
+title.a1.actionbar=让小鸡踩到压力板
+title.a2.actionbar=让足够数量的动物踩到压力板
+title.a3.actionbar=打开密道，踩到密道后的压力板
+title.b1.actionbar=移动黄绿色混凝土粉末到金块上
+title.b2.actionbar=移动黄绿色混凝土粉末到金块上
+title.b3.actionbar=移动沙子到金块上
+title.c1.actionbar=红石充能黄绿色混凝土
+title.c2.actionbar=红石充能过所有黄绿色混凝土
+title.c3.actionbar=将炼药锅装满水
+title.d1.actionbar=移动矿车到检测铁轨上
+title.d2.actionbar=移动矿车到检测铁轨上，点亮所有红石灯
+title.d3.actionbar=点亮所有红石灯
+title.e1.actionbar=获得粘液球
+title.e2.actionbar=合成并放置粘液块
+title.e3.actionbar=合成并放置粘液块
+title.f1.actionbar=移动粘液球碰到压力板
+title.f2.actionbar=移动粘液球碰到所有压力板
+title.f3.actionbar=挖掘并移动粘液球碰到所有压力板
+title.x.actionbar=打开并进入“门”
+title.hide1.actionbar=点亮所有红石灯
+title.hide2.actionbar=除草、播种、收获
+title.idea1.actionbar=踩到压力板
+title.idea2.actionbar=踩到压力板
+title.idea3.actionbar=打开通道，踩到压力板
+
+## 关卡提示
+tellraw.a1.hint1=§e拉下拉杆可以切换活塞状态
+tellraw.a1.hint2=§e手持小麦种子吸引小鸡
+
+tellraw.a2.hint1=§e墙上的羽毛和兔子皮各3个让你想到什么
+tellraw.a2.hint2=§e使用物品繁殖动物
+tellraw.a2.hint3=§e分次繁殖小鸡和兔子各一只后全部吸引到压力板上，使得压力板上有共计6只动物
+
+tellraw.a3.hint1=§e水桶上面的按钮可以切换压力板/水流状态，红石灯的个数代表压力板上动物的数量
+tellraw.a3.hint2=§e繁殖并吸引对应数量动物到压力板上以打开密道
+tellraw.a3.hint3=§e使用物品喂大猪并骑到密道后的压力板上
+
+tellraw.b1.hint1=§e使用粘性活塞可以拉回方块
+
+tellraw.b2.hint1=§e使用活塞虫可以推得更远
+tellraw.b2.hint2=§e粘性活塞和普通活塞相互推拉可以到达更远
+
+tellraw.b3.hint1=§e瀑布底端，按钮直接放置在活塞上可以让沙子通过
+tellraw.b3.hint2=§e推动混凝土粉末以产生路径
+tellraw.b3.hint3=§e墙上的提示：使用粘性活塞的先后顺序，箭头表示到达位置
+
+tellraw.c1.hint1=§e放置红石粉连通中继器
+
+tellraw.c2.hint1=§e点击红石中继器增加红石信号到达时间
+tellraw.c2.hint2=§e红石数量和可放置区域应该对应
+
+tellraw.c3.hint1=§e水里藏有发射器
+tellraw.c3.hint2=§e墙上的提示：将许多红石比较器首尾相连增加红石信号熄灭所需时间
+tellraw.c3.hint3=§e点击红石中继器增加红石信号到达时间
+
+tellraw.d1.hint1=§e拉下拉杆切换铁轨状态
+
+tellraw.d2.hint1=§e将矿车停在绿色混凝土上使得该灯亮
+
+tellraw.d3.hint1=§e下层的原木检测铁轨控制上层的转弯铁轨
+tellraw.d3.hint2=§e将下层矿车停在绿色混凝土上使得该灯亮
+
+tellraw.e1.hint1=§e活塞可以将玩家推下去
+
+tellraw.e2.hint1=§e活塞可以阻挡气泡柱
+
+tellraw.e3.hint1=§e注意墙上物品展示框背后的方块
+tellraw.e3.hint2=§e使用激流三叉戟可以起飞和突破气泡柱
+tellraw.e3.hint3=§e物品展示框背后的方块：该物品所藏匿的周围的方块
+
+tellraw.f1.hint1=§e细雪处藏有潜影盒
+
+tellraw.f2.hint1=§e细雪处藏有潜影盒
+tellraw.f2.hint2=§e有两个压力板
+tellraw.f2.hint3=§e使用冰霜行者靴子站在炼药锅处可以冻结水流
+
+tellraw.f3.hint1=§e挖掘水道，使得粘液球能够顺着水流流向两个压力板
+
+tellraw.x.hint1=§e粘液球需要1+1+9=11（个）
+tellraw.x.hint2=§e最后需要粘液块打开门
+tellraw.x.hint3=§e在活塞上放置按钮才可以获得掉落的沙子
+tellraw.x.hint4=§e右边墙上的提示说明，岩浆下方有烈焰棒，上方有小麦种子
+tellraw.x.hint5=§e左边墙上的提示说明，刷石机水流后河豚，岩浆后有地狱疣
+tellraw.x.hint6=§e需要合成熔炉、酿造台、玻璃瓶、粘液块、烈焰粉、岩浆膏
+tellraw.x.hint7=§e一开始左边墙上的提示：需要酿造的药水及其制作方法
+
+tellraw.hide1.hint1=§e使用弓箭射击按钮
+
+tellraw.hide2.hint1=§e将耕地上全部种上小麦，不是小麦的用锄头破坏
+tellraw.hide2.hint2=§e玩家脚下是耕地和小麦会自动湿润和成熟
+
+tellraw.idea1.hint1=§e跑酷
+
+tellraw.idea2.hint2=§e跑酷
+
+tellraw.idea3.hint1=§e将粘液块放到海晶石上打开高台
+tellraw.idea3.hint2=§e寻找物品以酿造跳跃提升II药水和合成粘液块
+tellraw.idea3.hint3=§e藏匿的物品在树上、花坛下、高台下
 
 
 title.class.cheer.name=类型
@@ -150,6 +250,7 @@ tellraw.credits.5=本图测试 一只卑微的量筒、大只毛茸茸的鸽子�
 tellraw.credits.6=技术支持 一只卑微的量筒、ProjectXero、6g3y、野鲤、土豆泥92
 tellraw.credits.7=非常感谢您的下载和游玩
 tellraw.credits.8=另外，如果您是实况主的话，感谢您的录制
+tellraw.credits.9=本地图使用了未修改的《MCBE简中译名修正》和《强制Mojangles字体》资源包，以呈现更好的游戏体验
 
 
 ##引导

@@ -7,6 +7,7 @@
         "change_to_adventure": { "textures": "textures/items/map_empty" },
         "change_to_spectator": { "textures": "textures/items/ender_eye" },
         "quit": { "textures" : "textures/items/quit"},
-        "reset": { "textures" : "textures/items/reset"}
+        "reset": { "textures" : "textures/items/reset"},
+        "hint":{"textures":"textures/items/hint"}
     }
 }

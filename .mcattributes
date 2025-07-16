@@ -9,3 +9,5 @@ diagnostic.disable.behaviorpack.mcstructure.missing=true
 diagnostic.disable.behaviorpack.mcstructure.missing=true
 diagnostic.disable.behaviorpack.mcstructure.missing=true
 diagnostic.disable.behaviorpack.block.states.missing=true
+diagnostic.disable.behaviorpack.blocks.missing=true
+diagnostic.disable.behaviorpack.blocks.missing=true
