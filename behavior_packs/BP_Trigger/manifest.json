@@ -3,7 +3,7 @@
     "header": {
         "name": "触发Trigger行为包",
         "description": "触发Trigger地图配套行为包。技术支持@一只卑微的量筒",
-        "uuid": "406d7ad9-a5cf-46a9-9e46-dc7f7ac7ef0d",
+        "uuid": "ef7fc771-71fe-45ba-8922-18c27f1d5df2",
         "version": [ 1, 0, 0 ],
         "min_engine_version": [ 1, 20, 10 ]
     },

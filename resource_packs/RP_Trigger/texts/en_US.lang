@@ -169,7 +169,7 @@ tellraw.hide2.hint2=§eFarmland under player auto-hydrates and wheat auto-ripens
 
 tellraw.idea1.hint1=§eJust Parkour
 
-tellraw.idea2.hint2=§eJust Parkour
+tellraw.idea2.hint1=§eJust Parkour
 
 tellraw.idea3.hint1=§eSet Slime Block on Prismarine to unlock the column
 tellraw.idea3.hint2=§eBrew Jump Boost II Potion & craft Slime Block

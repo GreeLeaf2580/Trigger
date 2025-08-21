@@ -155,7 +155,7 @@ tellraw.f2.hint3=§e使用冰霜行者靴子站在炼药锅处可以冻结水流
 
 tellraw.f3.hint1=§e挖掘水道，使得粘液球能够顺着水流流向两个压力板
 
-tellraw.x.hint1=§e粘液球需要1+1+9=11（个）
+tellraw.x.hint1=§e粘液球最少要求1+1+9=11（个）
 tellraw.x.hint2=§e最后需要粘液块打开门
 tellraw.x.hint3=§e在活塞上放置按钮才可以获得掉落的沙子
 tellraw.x.hint4=§e右边墙上的提示说明，岩浆下方有烈焰棒，上方有小麦种子
@@ -170,7 +170,7 @@ tellraw.hide2.hint2=§e玩家脚下是耕地和小麦会自动湿润和成熟
 
 tellraw.idea1.hint1=§e跑酷
 
-tellraw.idea2.hint2=§e跑酷
+tellraw.idea2.hint1=§e跑酷
 
 tellraw.idea3.hint1=§e将粘液块放到海晶石上打开高台
 tellraw.idea3.hint2=§e寻找物品以酿造跳跃提升II药水和合成粘液块
